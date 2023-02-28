@@ -1,0 +1,27 @@
+.navigation {
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px 10px;
+}
+
+.navigation-link {
+    text-decoration: none;
+    font-family: Courier New, serif;
+    color: #313131;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+
+.navigation-link:hover {
+    text-decoration: underline;
+    color: #f7d0cb;
+    cursor: pointer;
+}
+
+.navigation-link_checked {
+    text-decoration: underline;
+    color: #f7d0cb;
+}
