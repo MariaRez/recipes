@@ -8,13 +8,13 @@ function Header() {
   return (
     <header className='header'>
       <address className='social-media-links'>
-        <a className='social-media-link' href="https://wa.me/qr/MMWAREFAW4N4O1">
+        <a className='social-media-link' href="https://wa.me/qr/MMWAREFAW4N4O1" target='_blank' rel="noreferrer">
           <img className='social-media-link-image' src={whatsApp} alt='WhatsApp'/>
         </a>
-        <a className='social-media-link' href="https://www.instagram.com/m.sha.aa">
+        <a className='social-media-link' href="https://www.instagram.com/m.sha.aa" target='_blank' rel="noreferrer">
           <img className='social-media-link-image' src={instagram} alt='Instagram'/>
         </a>
-        <a className='social-media-link' href="https://www.facebook.com/mariiareznik">
+        <a className='social-media-link' href="https://www.facebook.com/mariiareznik" target='_blank' rel="noreferrer">
           <img className='social-media-link-image' src={facebook} alt='Facebook'/>
         </a>
       </address>
