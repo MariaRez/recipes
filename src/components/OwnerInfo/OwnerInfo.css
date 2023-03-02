@@ -1,0 +1,25 @@
+.owner-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.owner-info-title {
+    margin: 0 0 10px;
+    font-size: 52px;
+    color: #3d3d40;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.owner-info-description {
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: #010101;
+    font-size: 20px;
+    text-transform: uppercase;
+}
