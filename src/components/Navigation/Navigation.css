@@ -53,17 +53,17 @@
 .categories__list {
     width: 100%;
     padding: 5px 0 5px;
-    list-style: none;
     position: absolute;
     top: 20px;
     opacity: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    row-gap: 5px;
+    align-items: flex-start;
+    row-gap: 10px;
     background-color: #f9fafc;
     box-shadow: 5px 5px 5px #e3e4e6;
     transition: opacity 0.9s ease;
+    list-style-position: inside;
 }
 
 .categories:hover .categories__list  {
@@ -75,12 +75,47 @@
     font-family: New Century Schoolbook, TeX Gyre Schola, serif;
     font-weight: 500;
     color: #010101;
-    font-size: 12px;
-    transition: all 0.5s ease;
+    font-size: 16px;
+    cursor: pointer;
+    transition: list-style-image 0.3s ease;
 }
 
-.categories__item:hover {
-    text-decoration: underline;
-    color: #26d0aa;
-    cursor: pointer;
+.categories__item_breakfast {
+    list-style-image: url("/src/images/breakfast.svg");
+}
+
+.categories__item_breakfast:hover {
+    list-style-image: url("/src/images/breakfast-hover.svg");
+}
+
+.categories__item_lunch {
+    list-style-image: url("/src/images/lunch.svg");
+}
+
+.categories__item_lunch:hover {
+    list-style-image: url("/src/images/lunch-hover.svg");
+}
+
+.categories__item_dinner {
+    list-style-image: url("/src/images/dinner.svg");
+}
+
+.categories__item_dinner:hover {
+    list-style-image: url("/src/images/dinner-hover.svg");
+}
+
+.categories__item_snack {
+    list-style-image: url("/src/images/apple.svg");
+}
+
+.categories__item_snack:hover {
+    list-style-image: url("/src/images/apple-hover.svg");
+}
+
+.categories__item_all {
+    list-style-image: url("/src/images/salad.svg");
+}
+
+.categories__item_all:hover {
+    list-style-image: url("/src/images/salad-hover.svg");
 }

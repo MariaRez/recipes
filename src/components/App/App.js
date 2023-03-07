@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import About from '../About/About';
-import Breakfast from '../Breakfast/Breakfast';
+import AllCategories from '../AllCategories/AllCategories';
 import Contacts from '../Contacts/Contacts';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
@@ -16,7 +16,8 @@ function App() {
         <Route exact path="/main" element={<Main />}/>
         <Route exact path="/about" element={<About />}/>
         <Route exact path="/contacts" element={<Contacts />}/>
-        <Route exact path="/breakfast" element={<Breakfast />}/>
+        <Route exact path="/all-categories" element={<AllCategories />}/>
+        
       </Routes>
     </div>
   );
