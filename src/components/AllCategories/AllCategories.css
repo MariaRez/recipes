@@ -25,9 +25,9 @@
     display: inline-block;
 }
 
-.all-categories:before{ 
+.all-categories-title::before { 
     content: " ";
-    background: #e3e4e6;
+    background: #3d3d40;
     width: 2px;
     height: 100%;
     left: -15px;

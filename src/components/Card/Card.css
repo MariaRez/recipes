@@ -1,113 +1,35 @@
 .card {
-    max-width: 80vw;
-    min-width: 80vw;
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 30px;
-}
-
-.card__right-column {
+    height: 300px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid #26d0aa;;
+    border-radius: 15px;
+    row-gap: 20px;
+    transition: transform 0.2s;
 }
 
-.card-categories {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    column-gap: 10px;
-}
-
-.card-categories__item {
-    color:  #f9fafc;
-    background-color: #26d0aa;
-    border-radius: 3px;
-    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
-    font-weight: 900;
-    font-size: 15px;
-    padding: 3px 10px;
-    transition: background-color 0.5s ease;
-}
-
-.card-categories__item:hover {
-    background-color: #3d3d40;
+.card:hover {
     cursor: pointer;
+    transform: scale(110%);
+    transition: transform 2.5s;
 }
 
 .card-image {
-    width: 500px;
     border-radius: 15%;
     object-fit: cover;
+    width: 90%;
+    height: 200px;
 }
 
 .card-title {
     margin: 0;
+    text-align: center;
     font-family: New Century Schoolbook, TeX Gyre Schola, serif;
     font-weight: 900;
-    font-size: 40px;
+    font-size: 25px;
     color: #3d3d40;
     transition: color 0.5 ease;
     max-width: 500px;
-}
-
-.card-title:hover {
-    color:#26d0aa;
-    cursor: pointer;
-}
-
-.card-description {
-    margin: 0;
-    padding-right: 70px;
-    padding-left: 40px;
-    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
-    font-weight: 400;
-    font-size: 20px;
-    color: #5b5b5b;
-    max-width: 500px;
-}
-
-.card-time-text {
-    padding-left: 40px;
-    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
-    font-weight: 400;
-    font-size: 15px;
-    color: #5b5b5b;
-}
-
-.card-time {
-    color: #3d3d40;
-}
-
-.card-tags {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    column-gap: 5px;
-    padding-left: 40px;
-}
-
-.card-tags__title {
-    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
-    font-weight: 400;
-    font-size: 15px;
-    color: #5b5b5b;
-}
-
-.card-tag {
-    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
-    font-weight: 400;
-    font-size: 15px;
-    color: #26d0aa;
-    transition: color 0.5 ease;
-}
-
-.card-tag:hover {
-    color: #3d3d40;
-    cursor: pointer;
 }
