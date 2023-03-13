@@ -33,7 +33,6 @@
 .popup-title {
     margin: 30px 0 30px;
     text-align: center;
-    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
     font-weight: 900;
     font-size: 25px;
     color: #3d3d40;
@@ -51,6 +50,8 @@
 
 .popup-image {
     width: 300px;
+    border-radius: 10px;
+    height:fit-content;
 }
 
 .popup-button {

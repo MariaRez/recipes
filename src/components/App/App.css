@@ -3,18 +3,3 @@
     background-color: #f9fafc;
     min-width: 320px;
 }
-
-.main-link {
-    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
-    font-weight: 500;
-    letter-spacing: 3px;
-    color: #010101;
-    font-size: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: color 0.2s ease-in;
-}
-
-.main-link:hover {
-    color: #26d0aa;
-}

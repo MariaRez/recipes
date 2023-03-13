@@ -9,7 +9,6 @@
 
 .navigation-link {
     text-decoration: none;
-    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
     font-weight: 500;
     color: #010101;
     font-size: 15px;
@@ -37,7 +36,6 @@
 }
 
 .categories-title {
-    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
     font-weight: 500;
     color: #010101;
     text-transform: uppercase;
@@ -72,7 +70,6 @@
 
 .categories__item {
     text-decoration: none;
-    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
     font-weight: 500;
     color: #010101;
     font-size: 16px;
