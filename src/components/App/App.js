@@ -1,4 +1,5 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
+import Footer from '../../Footer/Footer';
 import About from '../About/About';
 import AllCategories from '../AllCategories/AllCategories';
 import Contacts from '../Contacts/Contacts';
@@ -30,6 +31,7 @@ function App() {
         <Route exact path="/all-categories" element={<AllCategories />}/>
         <Route exact path="/*" element={<PageNotFound />}/>
       </Routes>
+      <Footer />
     </div>
   );
 }

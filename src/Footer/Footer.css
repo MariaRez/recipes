@@ -1,0 +1,6 @@
+/* не забыть контенту дать нижний паддинг на высоту футера */
+.footer {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
