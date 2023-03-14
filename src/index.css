@@ -13,6 +13,6 @@ code {
     monospace;
 }
 
-h1, h2, h3, h4, h5, h6, .navigation-link, span, li {
+h1, h2, h3, h4, h5, h6, .navigation-link, span, li, .main-link {
   font-family: New Century Schoolbook, TeX Gyre Schola, serif;
 }

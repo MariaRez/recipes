@@ -7,13 +7,13 @@
     border: 1px solid #26d0aa;;
     border-radius: 10px;
     row-gap: 20px;
-    transition: transform 0.2s;
+    transition: transform 2.5s;
 }
 
 .card:hover {
     cursor: pointer;
     transform: scale(110%);
-    transition: transform 2.5s;
+    transition: transform 0.2s;
 }
 
 .card-image {
