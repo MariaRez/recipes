@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import CardPopup from '../../CardPopup/CardPopup';
 import CardList from '../CardList/CardList';
+import CardPopup from '../CardPopup/CardPopup';
 import './AllCategories.css';
 
 function AllCategories() {

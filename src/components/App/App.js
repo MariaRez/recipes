@@ -1,5 +1,4 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
-import Footer from '../../Footer/Footer';
 import About from '../About/About';
 import AllCategories from '../AllCategories/AllCategories';
 import Contacts from '../Contacts/Contacts';
@@ -7,6 +6,7 @@ import Header from '../Header/Header';
 import Main from '../Main/Main';
 import OwnerInfo from '../OwnerInfo/OwnerInfo';
 import PageNotFound from '../PageNotFound/PageNotFound';
+import Footer from '../Footer/Footer';
 import './App.css';
 
 function App() {
