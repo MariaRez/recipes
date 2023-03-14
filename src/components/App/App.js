@@ -31,7 +31,14 @@ function App() {
         <Route exact path="/all-categories" element={<AllCategories />}/>
         <Route exact path="/*" element={<PageNotFound />}/>
       </Routes>
-      <Footer />
+      {location.pathname === "/main" ||
+       location.pathname === "/about" ||
+       location.pathname === "/contacts" ||
+       location.pathname === "/all-categories" ? (
+          <Footer />
+        ) : (
+          ""
+        )}
     </div>
   );
 }
