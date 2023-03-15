@@ -16,7 +16,7 @@ function App() {
   return (
     <div className='app'>
       <Header />
-      {location.pathname === "/main" ||
+      {location.pathname === "/" ||
        location.pathname === "/about" ||
        location.pathname === "/contacts" ||
        location.pathname === "/all-categories" ? (
@@ -25,13 +25,13 @@ function App() {
           ""
         )}
       <Routes>
-        <Route exact path="/main" element={<Main />}/>
+        <Route exact path="/" element={<Main />}/>
         <Route exact path="/about" element={<About />}/>
         <Route exact path="/contacts" element={<Contacts />}/>
         <Route exact path="/all-categories" element={<AllCategories />}/>
         <Route exact path="/*" element={<PageNotFound />}/>
       </Routes>
-      {location.pathname === "/main" ||
+      {location.pathname === "/" ||
        location.pathname === "/about" ||
        location.pathname === "/contacts" ||
        location.pathname === "/all-categories" ? (
