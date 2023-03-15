@@ -3,8 +3,8 @@ import './OwnerInfo.css';
 function OwnerInfo() {
   return (
     <section className='owner-info'>
-        <h1 className='owner-info-title'>Мария Резник</h1>
-        <span className='owner-info-description'>Персональный кулинарный блог</span>
+        <h1 className='owner-info-title'>Кулинарный блог</h1>
+        <span className='owner-info-description'>Марии Резник</span>
     </section>
   );
 }

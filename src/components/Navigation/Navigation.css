@@ -73,6 +73,11 @@
     text-transform: uppercase;
     font-size: 15px;
     padding: 5px 5px;
+    transition: color 0.2s ease;
+}
+
+.categories-title:hover {
+    color: #26d0aa;
 }
 
 .categories__list {

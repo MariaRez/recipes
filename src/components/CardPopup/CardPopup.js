@@ -40,7 +40,7 @@ function CardPopup() {
                     <li>Добавить соус в пасту, перемешать и прогреть в кастрюле.</li>
                   </ol>
                 </div>
-                <button className='popup-button'></button>
+                <button className='popup-button' aria-label='Close' type='button' />
             </div>
         </div>
     );

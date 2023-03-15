@@ -1,5 +1,20 @@
-/* не забыть контенту дать нижний паддинг на высоту футера */
 .footer {
 margin-top: 30px;
 padding: 0 30px 30px;
+}
+
+.footer__copy {
+    color: #010101;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        margin-top: 15px;
+        padding: 0 15px 15px;
+    }
+    
+    .footer__copy {
+        font-size: 15px;
+    }
 }

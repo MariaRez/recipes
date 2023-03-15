@@ -22,4 +22,22 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     row-gap: 30px;
     column-gap: 30px;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .card-list {
+        margin: 15px 0;
+    }
+
+    .card-list__title {
+        font-size: 15px;
+    }
+
+    .card-list__items {
+        padding: 15px 10px 5px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        row-gap: 10px;
+        column-gap: 10px;
+    }
 }

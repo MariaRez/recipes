@@ -15,6 +15,7 @@ function App() {
 
   return (
     <div className='app'>
+      <div className='background-image background-image_broccoli'/>
       <Header />
       {location.pathname === "/" ||
        location.pathname === "/about" ||
@@ -31,6 +32,7 @@ function App() {
         <Route exact path="/all-categories" element={<AllCategories />}/>
         <Route exact path="/*" element={<PageNotFound />}/>
       </Routes>
+      <div className='background-image background-image_apple'/>
       {location.pathname === "/" ||
        location.pathname === "/about" ||
        location.pathname === "/contacts" ||
