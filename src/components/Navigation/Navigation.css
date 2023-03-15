@@ -1,5 +1,6 @@
 .navigation {
     width: 40%;
+    max-width: 400px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -97,7 +98,7 @@
 .categories__item {
     text-decoration: none;
     color: #010101;
-    font-size: 16px;
+    font-size: 15px;
     cursor: pointer;
     transition: list-style-image 0.3s ease;
 }
@@ -140,4 +141,21 @@
 
 .categories__item_all:hover {
     list-style-image: url("/src/images/salad-hover.svg");
+}
+
+@media (max-width: 1024px) {
+    .navigation {
+        justify-content:flex-end;
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        gap: 5px 5px;
+        width: 70%;
+    }
+
+    .navigation-link, .categories-title, .categories__item {
+        font-size: 10px;
+    }
 }
