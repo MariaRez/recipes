@@ -12,31 +12,31 @@
     padding: 5px 5px;
     color: #010101;
     font-size: 15px;
-    font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
     text-decoration: none;
 }
 
-.navigation-link::before, .navigation-link::after, .categories-title::before, .categories-title::after {
+.navigation-link::before, .navigation-link::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     content: "";
-    height: 14px;
-    width: 14px;
+    height: 0px;
+    width: 0px;
+    opacity: 0;
     position: absolute;
     transition: all 0.6s;
 }
 
-.navigation-link::before, .categories-title::before {
+.navigation-link::before {
   top: 0;
   left: 0;
   border-top: 1px solid #26d0aa;
   border-left: 1px solid #26d0aa;
 }
 
-.navigation-link::after, .categories-title::after {
+.navigation-link::after {
   bottom: 0;
   right: 0;
   border-bottom: 1px solid #26d0aa;
@@ -47,6 +47,7 @@
 .navigation-link:hover::after {
   width: 100%;
   height: 100%;
+  opacity: 1;
   transition: all 0.3s;
 }
 
@@ -54,6 +55,7 @@
 .navigation-link_checked::after {
     width: 100%;
     height: 100%;
+    opacity: 1;
 }
 
 .categories {
@@ -65,7 +67,6 @@
 }
 
 .categories-title {
-    font-weight: 700;
     line-height: 1;
     color: #010101;
     text-transform: uppercase;
@@ -95,7 +96,6 @@
 
 .categories__item {
     text-decoration: none;
-    font-weight: 500;
     color: #010101;
     font-size: 16px;
     cursor: pointer;

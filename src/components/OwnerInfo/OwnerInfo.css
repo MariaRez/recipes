@@ -3,19 +3,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .owner-info-title {
-    margin: 0 0 10px;
+    margin: 0;
     font-size: 52px;
     color: #3d3d40;
-    font-weight: 900;
     letter-spacing: 3px;
 }
 
 .owner-info-description {
-    font-weight: 500;
     letter-spacing: 3px;
     color: #010101;
     font-size: 20px;

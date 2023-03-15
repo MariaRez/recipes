@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Gentium Book Plus";
+    src:
+      url(./fonts/GentiumBookPlus/GentiumBookPlus-Regular.woff2) format("woff2"),
+      url(./fonts/GentiumBookPlus/GentiumBookPlus-Regular.woff) format("woff");
+      font-weight: normal;
+}
+
+@font-face {
+    font-family: "Gentium Book Plus";
+    src:
+      url(./fonts/GentiumBookPlus/GentiumBookPlus-Bold.woff2) format("woff2"),
+      url(./fonts/GentiumBookPlus/GentiumBookPlus-Bold.woff) format("woff");
+      font-weight: bold;
+}
+  
+@font-face {
+    font-family: "Gentium Book Plus";
+    src:
+      url(./fonts/GentiumBookPlus/GentiumBookPlus-Italic.woff2) format("woff2"),
+      url(./fonts/GentiumBookPlus/GentiumBookPlus-Italic.woff) format("woff");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Gentium Book Plus";
+    src:
+      url(./fonts/GentiumBookPlus/GentiumBookPlus-BoldItalic.woff2) format("woff2"),
+      url(./fonts/GentiumBookPlus/GentiumBookPlus-BoldItalic.woff) format("woff");
+    font-style: italic;
+    font-weight: bold;
+}
