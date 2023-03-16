@@ -12,32 +12,48 @@ function CardPopup() {
                     src='https://eda.ru/img/eda/c1240x830/s1.eda.ru/StaticContent/Photos/130314030255/130324184219/p_O.jpg.webp' 
                     alt='Паста с семгой в сливочно-чесночном соусе'/>
                     <div>
-                      <p className='ingredients'>Необходимые ингредиенты</p>
-                      <dl>
-                        <dt>Паста</dt>
-                        <dd>200 г</dd>
-                        <dt>Семга</dt>
-                        <dd>200 г</dd>
-                        <dt>Сливки 20%-ные</dt>
-                        <dd>150 мл</dd>
-                        <dt>Сливочное масло</dt>
-                        <dd>40 г</dd>
-                        <dt>Оливковое масло</dt>
-                        <dd>1 столовая ложка</dd>
-                        <dt>Чеснок</dt>
-                        <dd>3 зубчика</dd>
-                        <dt>Зелень</dt>
-                        <dd>1 пучок</dd>
-                      </dl>
+                      <table className='ingredients-table'>
+                        <caption className='ingredients-title'>Необходимые ингредиенты</caption>
+                        <tbody>
+                          <tr>
+                            <td>Паста</td>
+                            <td>200 г</td>
+                          </tr>
+                          <tr>
+                            <td>Семга</td>
+                            <td>200 г</td>
+                          </tr>
+                          <tr>
+                            <td>Сливки 20%-ные</td>
+                            <td>150 мл</td>
+                          </tr>
+                          <tr>
+                            <td>Сливочное масло</td>
+                            <td>40 г</td>
+                          </tr>
+                          <tr>
+                            <td>Оливковое масло</td>
+                            <td>1 столовая ложка</td>
+                          </tr>
+                          <tr>
+                            <td>Чеснок</td>
+                            <td>3 зубчика</td>
+                          </tr>
+                          <tr>
+                            <td>Зелень</td>
+                            <td>1 пучок</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
-                  <span>Инструкция по приготовлению</span>
-                  <ol>
-                    <li>Пасту отварить, добавить оливковое масло.</li>
-                    <li>Семгу нарезать небольшими кусочками и обжарить в сливочном масле 5-10 минут.</li>
-                    <li>Потихоньку влить сливки и чуть увеличить мощность плиты, довести до кипения, убавить мощность, чтобы чуть подкипала вся масса.</li>
-                    <li>Добавить зелень и мелко нарезанный чеснок.</li>
-                    <li>Добавить соус в пасту, перемешать и прогреть в кастрюле.</li>
+                  <span className='instruction-title'>Инструкция по приготовлению</span>
+                  <ol className='instruction-list'>
+                    <li className='instruction-list-item'>Пасту отварить, добавить оливковое масло.</li>
+                    <li className='instruction-list-item'>Семгу нарезать небольшими кусочками и обжарить в сливочном масле 5-10 минут.</li>
+                    <li className='instruction-list-item'>Потихоньку влить сливки и чуть увеличить мощность плиты, довести до кипения, убавить мощность, чтобы чуть подкипала вся масса.</li>
+                    <li className='instruction-list-item'>Добавить зелень и мелко нарезанный чеснок.</li>
+                    <li className='instruction-list-item'>Добавить соус в пасту, перемешать и прогреть в кастрюле.</li>
                   </ol>
                 </div>
                 <button className='popup-button' aria-label='Close' type='button' />

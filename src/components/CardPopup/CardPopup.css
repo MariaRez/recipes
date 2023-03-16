@@ -2,8 +2,8 @@
     position: fixed;
     top: 0;
     right: 0;
-    visibility: hidden;
-    opacity: 0;
+    /* visibility: hidden;
+    opacity: 0; */
     z-index: 15;
     transition: visibility 0.5s, opacity 0.5s linear;
     height: 100%;
@@ -15,7 +15,6 @@
 .popup-container {
     position: relative;
     width: 850px;
-    height: 700px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
@@ -23,6 +22,7 @@
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    padding: 30px;
 }
 
 .popup-content-container {
@@ -32,16 +32,14 @@
 }
 
 .popup-title {
-    margin: 30px 0 30px;
+    margin: 0 0 30px;
     text-align: center;
-    font-weight: 900;
     font-size: 25px;
     color: #3d3d40;
 }
 
 .popup-description {
     width: 100%;
-    padding: 0 30px 0;
     margin-bottom: 30px;
     box-sizing: border-box;
     display: flex;
@@ -50,9 +48,42 @@
 }
 
 .popup-image {
-    width: 300px;
-    border-radius: 10px;
+    width: 400px;
+    border-radius: 15px;
     height:fit-content;
+}
+
+.ingredients-table {
+    font-size: 15px;
+    border-collapse: separate;
+    text-align: left;
+    width: 100%;
+    border-spacing: 20px 7px;
+}
+
+.ingredients-title {
+    font-size: 17px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.instruction-title {
+    padding: 0;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 17px;
+}
+
+.instruction-list {
+    padding: 7px 0 0;
+    margin: 0;
+    list-style-position: inside;
+}
+
+.instruction-list-item {
+    font-size: 15px;
 }
 
 .popup-button {
