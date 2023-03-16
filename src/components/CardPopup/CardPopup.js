@@ -1,47 +1,52 @@
 import './CardPopup.css';
+import taco from '../../images/recipes/taco.jpeg';
 
 function CardPopup() {
     return (
         <div className='popup'>
             <div className='popup-container'>
                 <div className='popup-content-container'>
-                  <h2 className='popup-title'>Паста с семгой в сливочно-чесночном соусе</h2>
+                  <h2 className='popup-title'>Тако с растительным фаршом</h2>
                   <div className='popup-description'>
                     <img
                     className='popup-image'
-                    src='https://eda.ru/img/eda/c1240x830/s1.eda.ru/StaticContent/Photos/130314030255/130324184219/p_O.jpg.webp' 
-                    alt='Паста с семгой в сливочно-чесночном соусе'/>
+                    src={taco} 
+                    alt='Тако с растительным фаршом'/>
                     <div>
                       <table className='ingredients-table'>
                         <caption className='ingredients-title'>Необходимые ингредиенты</caption>
                         <tbody>
                           <tr>
-                            <td>Паста</td>
-                            <td>200 г</td>
+                            <td>Небольшие тортильи</td>
+                            <td>8 шт</td>
                           </tr>
                           <tr>
-                            <td>Семга</td>
-                            <td>200 г</td>
+                            <td>Растительный фарш</td>
+                            <td>400 г</td>
                           </tr>
                           <tr>
-                            <td>Сливки 20%-ные</td>
-                            <td>150 мл</td>
+                            <td>Подсолнечное масло</td>
+                            <td>1 ч. ложка</td>
                           </tr>
                           <tr>
-                            <td>Сливочное масло</td>
-                            <td>40 г</td>
+                            <td>Красный лук</td>
+                            <td>1 шт</td>
                           </tr>
                           <tr>
-                            <td>Оливковое масло</td>
-                            <td>1 столовая ложка</td>
+                            <td>Огурец</td>
+                            <td>1 шт</td>
                           </tr>
                           <tr>
-                            <td>Чеснок</td>
-                            <td>3 зубчика</td>
+                            <td>Помидор</td>
+                            <td>1 шт</td>
                           </tr>
                           <tr>
-                            <td>Зелень</td>
-                            <td>1 пучок</td>
+                            <td>Кинза</td>
+                            <td>2-3 шт</td>
+                          </tr>
+                          <tr>
+                            <td>Сырный соус</td>
+                            <td>4 ч. ложки</td>
                           </tr>
                         </tbody>
                       </table>
@@ -49,11 +54,13 @@ function CardPopup() {
                   </div>
                   <span className='instruction-title'>Инструкция по приготовлению</span>
                   <ol className='instruction-list'>
-                    <li className='instruction-list-item'>Пасту отварить, добавить оливковое масло.</li>
-                    <li className='instruction-list-item'>Семгу нарезать небольшими кусочками и обжарить в сливочном масле 5-10 минут.</li>
-                    <li className='instruction-list-item'>Потихоньку влить сливки и чуть увеличить мощность плиты, довести до кипения, убавить мощность, чтобы чуть подкипала вся масса.</li>
-                    <li className='instruction-list-item'>Добавить зелень и мелко нарезанный чеснок.</li>
-                    <li className='instruction-list-item'>Добавить соус в пасту, перемешать и прогреть в кастрюле.</li>
+                    <li className='instruction-list-item'>На сухой сковороде по 1 минуте с каждой стороны прогреть тортильи, после
+                    накрыть все полотенцем, чтобы тортильи не засохли;</li>
+                    <li className='instruction-list-item'>Добавить на сковородку масло и обжарить фарш 7-10 минут до готовности;</li>
+                    <li className='instruction-list-item'>Нарезать мелким кубиком овощи и порубить кинзу;</li>
+                    <li className='instruction-list-item'>Промазать небольшим количеством сырного соуса тортилью;</li>
+                    <li className='instruction-list-item'>Затем выложить обжаренный фарш, нарезанные овощи</li>
+                    <li className='instruction-list-item'>Сверху полить сырным соусом и украсить кинзой</li>
                   </ol>
                 </div>
                 <button className='popup-button' aria-label='Close' type='button' />
