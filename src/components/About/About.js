@@ -37,11 +37,11 @@ function About() {
           и останетесь довольны.
         </p>
         <ul className='about-fotos'>
-          <li><img className='about-foto' src={photo1} alt=''/></li>
-          <li><img className='about-foto' src={photo2} alt=''/></li>
-          <li><img className='about-foto' src={photo3} alt=''/></li>
-          <li><img className='about-foto' src={photo4} alt=''/></li>
-          <li><img className='about-foto' src={photo5} alt=''/></li>
+          <li><img className='about-foto' src={photo1} alt='Брускетты с чесноком'/></li>
+          <li><img className='about-foto' src={photo2} alt='Карпаччо'/></li>
+          <li><img className='about-foto' src={photo3} alt='Тако с растительным мясом'/></li>
+          <li><img className='about-foto' src={photo4} alt='Булочки с маком'/></li>
+          <li><img className='about-foto' src={photo5} alt='Рамен'/></li>
         </ul>
       </div>
     </section>
