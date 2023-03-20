@@ -6,10 +6,9 @@
 }
 
 .contacts-main-image {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 0 200px;
     margin-top: 50px;
+    width: 80%;
+    min-width: 300px;
 }
 
 .contacts-text {
@@ -31,6 +30,9 @@
 .contacts-description {
     margin: 15px 0 0;
     font-size: 15px;
+    width: 80%;
+    min-width: 300px;
+    text-align: center;
 }
 
 .contacts-form {
@@ -133,3 +135,57 @@
     height: 100%;
     transition: all 0.3s;
   }
+
+@media (max-width: 768px) {
+    .contacts {
+        padding: 15px;
+    }
+
+    .contacts-text {
+        margin-top: 25px;
+        font-size: 15px;
+    }
+
+    .contacts-title {
+        font-size: 30px;
+        margin: 30px 0 0;
+        line-height: 30px;
+    }
+
+    .contacts-form {
+        margin: 20px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px 15px;
+    }
+
+    .contacts-input {
+        min-width: 150px;
+        height: 30px;
+        padding: 7px 15px;
+    }
+
+    .contacts-input_size_big {
+        min-height: 50px;
+    }
+
+    .contacts-button {
+        height: 30px;
+        padding: 7px 10px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 425px) {
+    .contacts-text {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    .contacts-title {
+        font-size: 20px;
+        margin: 20px 0 0;
+        line-height: 20px;
+    }
+
+}
