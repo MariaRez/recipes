@@ -9,32 +9,43 @@
     box-sizing: border-box;
     width: 100%;
     padding: 0 200px;
+    margin-top: 50px;
 }
 
 .contacts-text {
     text-transform: uppercase;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    font-size: 17px;
 }
 
 .contacts-title {
-    margin: 0;
+    margin: 50px 0 0;
     font-size: 52px;
     color: #3d3d40;
     letter-spacing: 3px;
     text-align: center;
+    line-height: 52px;
 }
 
 .contacts-description {
-    margin: 0;
+    margin: 15px 0 0;
+    font-size: 15px;
 }
 
 .contacts-form {
+    margin: 30px 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 30px;
 }
 
 .contacts-fieldset {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    border: none;
 }
 
 .contacts-fieldset_size_big {
@@ -42,13 +53,83 @@
 }
 
 .contacts-label {
+    padding-bottom: 7px;
+    font-family: "Gentium Book Plus", "Times";
+}
 
+.contacts-label::after {
+    content: "*";
 }
 
 .contacts-input {
+    box-sizing: border-box;
+    min-width: 300px;
+    height: 50px;
+    color: #3d3d40;
+    border: 1px solid rgba(61, 61, 64, .15);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: "Gentium Book Plus", "Times";
+    vertical-align:baseline;
+}
 
+.contacts-input_size_big {
+    min-height: 100px;
+}
+
+.contacts-input::placeholder {
+    color: rgba(61, 61, 64, .4);
+    letter-spacing: 1px;
+    font-family: "Gentium Book Plus", "Times";
+    font-style: italic;
 }
 
 .contacts-button {
-
+    font-family: "Gentium Book Plus", "Times";
+    border: none;
+    background-color: transparent;
+    height: 50px;
+    position: relative;
+    padding: 14px 20px;
+    color: #010101;
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
 }
+
+.contacts-button:hover {
+    cursor: pointer;
+}
+
+.contacts-button::before, .contacts-button::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    content: "";
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all 0.6s;
+}
+  
+.contacts-button::before {
+    top: 0;
+    left: 0;
+    border-top: 1px solid #26d0aa;
+    border-left: 1px solid #26d0aa;
+  }
+  
+  .contacts-button::after {
+    bottom: 0;
+    right: 0;
+    border-bottom: 1px solid #26d0aa;
+    border-right: 1px solid #26d0aa;
+  }
+  
+  .contacts-button:hover::before,
+  .contacts-button:hover::after {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+  }

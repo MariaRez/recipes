@@ -3,6 +3,12 @@ import "./Contacts.css";
 import main from "../../images/contacts/main.jpeg";
 
 function Contacts() {
+
+  function handleSubmit(evt) {
+    evt.preventDefault();
+    // написать функцию отправки сообщения от пользователя
+  }
+
   return (
     <section className="section">
       <div className="title-container">
@@ -22,7 +28,10 @@ function Contacts() {
           Отправьте мне сообщение ниже, и я обязательно свяжусь с вами, как
           только смогу. Спасибо!
         </p>
-        <form className="contacts-form" name="contact">
+        <form
+          className="contacts-form"
+          name="contact"
+          onSubmit={handleSubmit}>
           <fieldset className="contacts-fieldset">
           <label className="contacts-label" htmlFor="name">Имя</label>
           <input
@@ -49,14 +58,14 @@ function Contacts() {
           </fieldset>
           <fieldset className="contacts-fieldset contacts-fieldset_size_big">
           <label className="contacts-label" htmlFor="message">Сообщение</label>
-          <input
+          <textarea
             id="message"
             type="text"
             name="message"
-            placeholder="Напишите ваше сообщение для меня"
+            placeholder="Напишите ваше сообщение для меня (пожелания, впечатления, замечания, вопросы и др.)"
             required
             minLength="2"
-            className="contacts-input"
+            className="contacts-input contacts-input_size_big"
           />
           </fieldset>
           <button
