@@ -1,0 +1,54 @@
+.contacts {
+    padding: 25px 70px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts-main-image {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 200px;
+}
+
+.contacts-text {
+    text-transform: uppercase;
+}
+
+.contacts-title {
+    margin: 0;
+    font-size: 52px;
+    color: #3d3d40;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.contacts-description {
+    margin: 0;
+}
+
+.contacts-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contacts-fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+.contacts-fieldset_size_big {
+    grid-column: span 2;
+}
+
+.contacts-label {
+
+}
+
+.contacts-input {
+
+}
+
+.contacts-button {
+
+}
