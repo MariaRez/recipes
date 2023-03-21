@@ -1,18 +1,15 @@
-import { Link } from 'react-router-dom';
 import './About.css';
 import photo1 from '../../images/about/photo1.jpeg'
 import photo2 from '../../images/about/photo2.jpeg'
 import photo3 from '../../images/about/photo3.jpeg'
 import photo4 from '../../images/about/photo4.jpeg'
 import photo5 from '../../images/about/photo5.jpeg'
+import NavTab from '../NavTab/NavTab';
 
 function About() {
   return (
     <section className='section'>
-      <div className='title-container'>
-        <Link className='main-link' to='/'>На главную</Link>
-        <h2 className='title'>О проекте</h2>
-      </div>
+      <NavTab title={'О проекте'}/>
       <div className='about'>
         <p className='about-text'>
         С самых ранних лет моей страстью была готовка. Мама приходила довольно поздно с работы, но ее всегда ждал вкусный 
