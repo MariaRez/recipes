@@ -34,8 +34,11 @@ function Contacts() {
               name="name"
               placeholder="Напишите ваше имя здесь"
               required
+              minLength="2"
+              maxLength="30"
               className="contacts-input"
             />
+            <span className="input-status"></span>
           </fieldset>
           <fieldset className="contacts-fieldset">
             <label className="contacts-label" htmlFor="email">
@@ -49,8 +52,10 @@ function Contacts() {
               pattern="^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$"
               required
               minLength="2"
+              maxLength="50"
               className="contacts-input"
             />
+            <span className="input-status"></span>
           </fieldset>
           <fieldset className="contacts-fieldset contacts-fieldset_size_big">
             <label className="contacts-label" htmlFor="message">
@@ -63,8 +68,10 @@ function Contacts() {
               placeholder="Напишите ваше сообщение для меня (пожелания, впечатления, замечания, вопросы и др.)"
               required
               minLength="2"
+              maxLength="1000"
               className="contacts-input contacts-input_size_big"
             />
+            <span className="input-status"></span>
           </fieldset>
           <button
             type="submit"

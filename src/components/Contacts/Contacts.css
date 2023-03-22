@@ -1,191 +1,237 @@
 .contacts {
-    padding: 25px 70px 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 25px 70px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contacts-main-image {
-    margin-top: 50px;
-    width: 80%;
-    min-width: 300px;
+  margin-top: 50px;
+  width: 80%;
+  min-width: 300px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .contacts-text {
-    text-transform: uppercase;
-    margin-top: 50px;
-    letter-spacing: 2px;
-    font-size: 17px;
+  text-transform: uppercase;
+  margin-top: 50px;
+  letter-spacing: 2px;
+  font-size: 17px;
 }
 
 .contacts-title {
-    margin: 50px 0 0;
-    font-size: 52px;
-    color: #3d3d40;
-    letter-spacing: 3px;
-    text-align: center;
-    line-height: 52px;
+  margin: 50px 0 0;
+  font-size: 52px;
+  color: #3d3d40;
+  letter-spacing: 3px;
+  text-align: center;
+  line-height: 52px;
 }
 
 .contacts-description {
-    margin: 15px 0 0;
-    font-size: 15px;
-    width: 80%;
-    min-width: 300px;
-    text-align: center;
+  margin: 15px 0 0;
+  font-size: 15px;
+  width: 80%;
+  min-width: 300px;
+  text-align: center;
 }
 
 .contacts-form {
-    margin: 30px 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px 30px;
+  margin: 30px 0;
+  width: 80%;
+  min-width: 300px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 70px);
+  grid-gap: 20px 30px;
 }
 
 .contacts-fieldset {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    border: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border: none;
 }
 
 .contacts-fieldset_size_big {
-    grid-column: span 2;
+  grid-column: span 2;
 }
 
 .contacts-label {
-    padding-bottom: 7px;
-    font-family: "Gentium Book Plus", "Times";
+  font-size: 15px;
+  color: #3d3d40;
+  padding-bottom: 7px;
+  font-family: "Gentium Book Plus", "Times";
 }
 
 .contacts-label::after {
-    content: "*";
+  content: "*";
 }
 
 .contacts-input {
-    box-sizing: border-box;
-    min-width: 300px;
-    height: 50px;
-    color: #3d3d40;
-    border: 1px solid rgba(61, 61, 64, .15);
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-family: "Gentium Book Plus", "Times";
-    vertical-align:baseline;
+  box-sizing: border-box;
+  color: #3d3d40;
+  border: 1px solid rgba(61, 61, 64, 0.15);
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: "Gentium Book Plus", "Times";
+  vertical-align: baseline;
+}
+
+.contacts-input:active,
+.contacts-input:focus {
+  outline: 0;
+  outline-offset: 0;
+  border: 1px solid #26d0aa;
 }
 
 .contacts-input_size_big {
-    min-height: 100px;
+  resize: vertical;
 }
 
 .contacts-input::placeholder {
-    color: rgba(61, 61, 64, .4);
-    letter-spacing: 1px;
-    font-family: "Gentium Book Plus", "Times";
-    font-style: italic;
+  color: rgba(61, 61, 64, 0.4);
+  letter-spacing: 1px;
+  font-family: "Gentium Book Plus", "Times";
+  font-style: italic;
 }
 
-.contacts-button {
-    font-family: "Gentium Book Plus", "Times";
-    border: none;
-    background-color: transparent;
-    height: 50px;
-    position: relative;
-    padding: 14px 20px;
-    color: #010101;
-    font-size: 20px;
-    line-height: 1;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.contacts-button:hover {
-    cursor: pointer;
-}
-
-.contacts-button::before, .contacts-button::after {
+.input-status {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    content: "";
-    height: 14px;
-    width: 14px;
     position: absolute;
-    transition: all 0.6s;
+    right: 20px;
+    bottom: 0.5em;
 }
-  
+
+.contacts-input:invalid {
+  border: 1px solid #e06666;
+}
+
+.contacts-input:invalid + .input-status::before {
+  content: "✖";
+  color: #e06666;
+}
+
+.contacts-input:valid + .input-status::before {
+  content: "✓";
+  color: #26d0aa;
+}
+
+.contacts-input:invalid:placeholder-shown {
+  border: 1px solid rgba(61, 61, 64, 0.15);
+}
+
+.contacts-input:invalid:placeholder-shown + .input-status::before,
+.contacts-input:placeholder-shown + .input-status::before {
+  visibility: hidden;
+}
+
+.contacts-button {
+  font-family: "Gentium Book Plus", "Times";
+  border: none;
+  background-color: transparent;
+  height: 50px;
+  position: relative;
+  padding: 14px 20px;
+  color: #010101;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  justify-self: center;
+}
+
+.contacts-button:hover {
+  cursor: pointer;
+}
+
+.contacts-button::before,
+.contacts-button::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  content: "";
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all 0.6s;
+}
+
 .contacts-button::before {
-    top: 0;
-    left: 0;
-    border-top: 1px solid #26d0aa;
-    border-left: 1px solid #26d0aa;
-  }
-  
-  .contacts-button::after {
-    bottom: 0;
-    right: 0;
-    border-bottom: 1px solid #26d0aa;
-    border-right: 1px solid #26d0aa;
-  }
-  
-  .contacts-button:hover::before,
-  .contacts-button:hover::after {
-    width: 100%;
-    height: 100%;
-    transition: all 0.3s;
-  }
+  top: 0;
+  left: 0;
+  border-top: 1px solid #26d0aa;
+  border-left: 1px solid #26d0aa;
+}
+
+.contacts-button::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 1px solid #26d0aa;
+  border-right: 1px solid #26d0aa;
+}
+
+.contacts-button:hover::before,
+.contacts-button:hover::after {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.contacts-button_disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+}
 
 @media (max-width: 768px) {
-    .contacts {
-        padding: 15px;
-    }
+  .contacts {
+    padding: 15px;
+  }
 
-    .contacts-text {
-        margin-top: 25px;
-        font-size: 15px;
-    }
+  .contacts-text {
+    margin-top: 25px;
+    font-size: 15px;
+  }
 
-    .contacts-title {
-        font-size: 30px;
-        margin: 30px 0 0;
-        line-height: 30px;
-    }
+  .contacts-title {
+    font-size: 30px;
+    margin: 30px 0 0;
+    line-height: 30px;
+  }
 
-    .contacts-form {
-        margin: 20px 0;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px 15px;
-    }
+  .contacts-form {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 70px);
+    grid-gap: 15px 0px;
+  }
 
-    .contacts-input {
-        min-width: 150px;
-        height: 30px;
-        padding: 7px 15px;
-    }
+  .contacts-fieldset_size_big {
+    grid-column: 1 / 1;
+  }
 
-    .contacts-input_size_big {
-        min-height: 50px;
-    }
 
-    .contacts-button {
-        height: 30px;
-        padding: 7px 10px;
-        font-size: 15px;
-    }
+  .contacts-button {
+    height: 30px;
+    padding: 7px 10px;
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 425px) {
-    .contacts-text {
-        margin-top: 15px;
-        font-size: 12px;
-    }
+  .contacts-text {
+    margin-top: 15px;
+    font-size: 12px;
+  }
 
-    .contacts-title {
-        font-size: 20px;
-        margin: 20px 0 0;
-        line-height: 20px;
-    }
-
+  .contacts-title {
+    font-size: 20px;
+    margin: 20px 0 0;
+    line-height: 20px;
+  }
 }
