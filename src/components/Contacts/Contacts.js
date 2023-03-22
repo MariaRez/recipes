@@ -65,7 +65,7 @@ function Contacts() {
               id="message"
               type="text"
               name="message"
-              placeholder="Напишите ваше сообщение для меня (пожелания, впечатления, замечания, вопросы и др.)"
+              placeholder="Напишите ваше сообщение"
               required
               minLength="2"
               maxLength="1000"
