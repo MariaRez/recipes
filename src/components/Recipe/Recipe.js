@@ -1,15 +1,17 @@
-import './CardPopup.css';
+import './Recipe.css';
 import taco from '../../images/recipes/taco.jpeg';
+import NavTab from "../NavTab/NavTab";
 
-function CardPopup() {
+function Recipe() {
     return (
-        <div className='popup'>
-            <div className='popup-container'>
-                <div className='popup-content-container'>
-                  <h2 className='popup-title'>Тако с растительным фаршом</h2>
-                  <div className='popup-description'>
+        <section className='recipe'>
+          <NavTab title={'Тако с растительным фаршом'}/>
+            <div className='recipe-container'>
+                <div className='recipe-content-container'>
+                  <h2 className='recipe-title'>Тако с растительным фаршом</h2>
+                  <div className='recipe-description'>
                     <img
-                    className='popup-image'
+                    className='recipe-image'
                     src={taco} 
                     alt='Тако с растительным фаршом'/>
                     <div>
@@ -63,10 +65,9 @@ function CardPopup() {
                     <li className='instruction-list-item'>Сверху полить сырным соусом и украсить кинзой</li>
                   </ol>
                 </div>
-                <button className='popup-button' aria-label='Close' type='button' />
             </div>
-        </div>
+        </section>
     );
   }
   
-  export default CardPopup;
+  export default Recipe;

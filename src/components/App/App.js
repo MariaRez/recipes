@@ -8,6 +8,7 @@ import OwnerInfo from '../OwnerInfo/OwnerInfo';
 import PageNotFound from '../PageNotFound/PageNotFound';
 import Footer from '../Footer/Footer';
 import './App.css';
+import CardPopup from '../Recipe/Recipe';
 
 function App() {
 
@@ -20,7 +21,8 @@ function App() {
       {location.pathname === "/" ||
        location.pathname === "/about" ||
        location.pathname === "/contacts" ||
-       location.pathname === "/all-categories" ? (
+       location.pathname === "/all-categories" ||
+       location.pathname === "/recipe" ? (
           <OwnerInfo />
         ) : (
           ""
@@ -30,13 +32,15 @@ function App() {
         <Route exact path="/about" element={<About />}/>
         <Route exact path="/contacts" element={<Contacts />}/>
         <Route exact path="/all-categories" element={<AllCategories />}/>
+        <Route exact path='/recipe' element={<CardPopup />}/>
         <Route exact path="/*" element={<PageNotFound />}/>
       </Routes>
       <div className='background-image background-image_apple'/>
       {location.pathname === "/" ||
        location.pathname === "/about" ||
        location.pathname === "/contacts" ||
-       location.pathname === "/all-categories" ? (
+       location.pathname === "/all-categories" ||
+       location.pathname === "/recipe" ? (
           <Footer />
         ) : (
           ""
