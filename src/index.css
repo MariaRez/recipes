@@ -18,10 +18,16 @@
   color: dimgray;
 }
 
+::placeholder {
+  font-style: italic;
+  color: rgba(61, 61, 64, 0.4);
+  letter-spacing: 1px;
+}
+
 body {
   margin: 0;
   background-color: var(--color4);
-  font-family: "Gentium Book Plus", "Times";
+  font-family: "Gentium Book Plus", Times;
 }
 
 h1 {
@@ -33,6 +39,6 @@ h2, h3, h4 {
   font-weight: bold;
 }
 
-h5, h6, .navigation-link, span, li, .main-link, button, input, fieldset, label {
+h5, h6, span, li, a, button, input, fieldset, label {
   font-weight: normal;
 }

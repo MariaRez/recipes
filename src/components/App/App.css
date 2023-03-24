@@ -63,7 +63,8 @@ footer {
 .ingredients-table,
 .about-text,
 .contacts-description,
-.contacts-label {
+.contacts-label,
+.instruction-list-item {
   font-size: 15px;
 }
 

@@ -45,7 +45,7 @@
 
 .contacts-label {
   padding-bottom: 7px;
-  font-family: "Gentium Book Plus", "Times";
+  /* font-family: "Gentium Book Plus", "Times"; */
 }
 
 .contacts-label::after {
@@ -56,7 +56,6 @@
   color: var(--color1);
   border: 1px solid rgba(61, 61, 64, 0.15);
   padding: 10px 20px;
-  font-family: "Gentium Book Plus", "Times";
   vertical-align: baseline;
 }
 
@@ -69,13 +68,6 @@
 
 .contacts-input_size_big {
   height: 100px;
-}
-
-.contacts-input::placeholder {
-  color: rgba(61, 61, 64, 0.4);
-  letter-spacing: 1px;
-  font-family: "Gentium Book Plus", "Times";
-  font-style: italic;
 }
 
 .input-status {
@@ -108,7 +100,6 @@
 }
 
 .contacts-button {
-  font-family: "Gentium Book Plus", "Times";
   border: none;
   background-color: transparent;
   height: 50px;
