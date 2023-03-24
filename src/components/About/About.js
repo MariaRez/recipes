@@ -10,7 +10,7 @@ function About() {
   return (
     <section className='section'>
       <NavTab title={'О проекте'}/>
-      <div className='about'>
+      <div className='about section'>
         <p className='about-text'>
         С самых ранних лет моей страстью была готовка. Мама приходила довольно поздно с работы, но ее всегда ждал вкусный 
         изысканный &#40;по моему мнению&#41; ужин. Вероянее всего это было что-то простое - макароны с сыром, вареная

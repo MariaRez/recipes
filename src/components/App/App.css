@@ -2,6 +2,169 @@
   width: 100vw;
   min-width: 320px;
 }
+
+header,
+footer {
+  padding: 7px 30px;
+  background-color: var(--color4);
+}
+
+/* для секции */
+.section {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation-link,
+.footer__copy,
+.categories-title,
+.categories__item,
+.nav-tab-main-link,
+.owner-info-description,
+.owner-info-title,
+.main-text,
+.page-not-found__title,
+.page-not-found__description,
+.recipe-title,
+.ingredients-table,
+.instruction-title,
+.instruction-list,
+.card-list__title,
+.contacts-text,
+.contacts-title,
+.contacts-description,
+.contacts-label,
+.contacts-button {
+  color: var(--color1);
+}
+
+.nav-tab-title {
+  color: var(--color2);
+}
+
+.card__title,
+.card__description {
+  color: var(--color4);
+}
+
+.owner-info-title,
+.page-not-found__title,
+.contacts-title {
+  font-size: 52px;
+}
+
+.navigation-link,
+.footer__copy,
+.categories-title,
+.categories__item,
+.card__description,
+.ingredients-table,
+.about-text,
+.contacts-description,
+.contacts-label {
+  font-size: 15px;
+}
+
+.nav-tab-main-link,
+.nav-tab-title,
+.contacts-text,
+.contacts-button,
+.main-text,
+.ingredients-title,
+.instruction-title,
+.card__title,
+.owner-info-description,
+.page-not-found__description,
+.recipe-title,
+.card-list__title {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.nav-tab-main-link,
+.nav-tab-title,
+.contacts-text,
+.contacts-button,
+.main-text,
+.ingredients-title,
+.instruction-title {
+  text-transform: uppercase;
+}
+
+.main-text,
+.page-not-found__title,
+.page-not-found__description,
+.recipe-title {
+  margin: 10px 0;
+}
+
+input,
+textarea {
+  border-radius: 5px;
+}
+
+.card,
+.card__overlay,
+.recipe-image {
+  border-radius: 15px;
+}
+
+.navigation-link::before,
+.navigation-link::after,
+.nav-tab-main-link::before,
+.nav-tab-main-link::after,
+.contacts-button::before,
+.contacts-button::after {
+  content: "";
+  height: 14px;
+  width: 14px;
+  opacity: 1;
+  position: absolute;
+  transition: all 0.6s;
+}
+
+.navigation-link::before,
+.navigation-link::after {
+  content: "";
+  height: 14px;
+  width: 14px;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.6s;
+}
+
+.navigation-link::before,
+.nav-tab-main-link::before,
+.contacts-button::before {
+  top: 0;
+  left: 0;
+  border-top: 1px solid var(--color2);
+  border-left: 1px solid var(--color2);
+}
+
+.navigation-link::after,
+.nav-tab-main-link::after,
+.contacts-button::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 1px solid var(--color2);
+  border-right: 1px solid var(--color2);
+}
+
+.navigation-link:hover::before,
+.navigation-link:hover::after,
+.nav-tab-main-link:hover::before,
+.nav-tab-main-link:hover::after,
+.contacts-button:hover::before,
+.contacts-button:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
 /* картинки на фоне */
 .background-image {
   position: absolute;
@@ -14,7 +177,6 @@
 }
 
 .background-image_broccoli {
-  position: absolute;
   top: 70px;
   right: 70px;
   transform: rotate(30deg);
@@ -22,20 +184,10 @@
 }
 
 .background-image_apple {
-  position: absolute;
   bottom: 0;
   left: 70px;
   transform: rotate(210deg);
   background-image: url(../../images/apple.svg);
-}
-
-/* для секции */
-.section {
-  width: 100%;
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 @media (max-width: 1024px) {
@@ -43,12 +195,12 @@
     width: 300px;
     height: 300px;
   }
-  
+
   .background-image_broccoli {
     right: 50px;
     transform: rotate(30deg);
   }
-  
+
   .background-image_apple {
     left: 50px;
   }
@@ -56,19 +208,64 @@
 
 @media (max-width: 768px) {
   .section {
-    margin-top: 20px;
+    margin: 20px 0;
+  }
+
+  header,
+  footer {
+    padding: 7px 15px;
+  }
+
+  .owner-info-title,
+  .page-not-found__title,
+  .contacts-title {
+    font-size: 40px;
+  }
+
+  .navigation-link,
+  .footer__copy,
+  .categories-title,
+  .categories__item,
+  .card__description,
+  .ingredients-table,
+  .about-text,
+  .contacts-label {
+    font-size: 10px;
+  }
+
+  .nav-tab-main-link,
+  .nav-tab-title,
+  .card__title,
+  .owner-info-description,
+  .main-text,
+  .page-not-found__description,
+  .recipe-title,
+  .ingredients-title,
+  .instruction-title,
+  .card-list__title,
+  .contacts-text,
+  .contacts-button,
+  .contacts-description {
+    font-size: 15px;
+  }
+
+  .main-text,
+  .page-not-found__title,
+  .page-not-found__description,
+  .recipe-title {
+    margin: 7px 0;
   }
 
   .background-image {
     width: 200px;
     height: 200px;
   }
-  
+
   .background-image_broccoli {
     right: 30px;
     transform: rotate(30deg);
   }
-  
+
   .background-image_apple {
     left: 30px;
     bottom: 70px;

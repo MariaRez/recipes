@@ -11,7 +11,7 @@ function Contacts() {
   return (
     <section className="section">
       <NavTab title={"Контакты"} />
-      <div className="contacts">
+      <div className="contacts section">
         <img
           src={main}
           alt="Главное изображение на странице Контакты"
@@ -71,7 +71,7 @@ function Contacts() {
               maxLength="1000"
               className="contacts-input contacts-input_size_big"
             />
-            <span className="input-status"></span>
+            <span className="input-status input-status_last"></span>
           </fieldset>
           <button
             type="submit"

@@ -5,51 +5,13 @@
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    gap: 10px 10px;
+    gap: 10px;
 }
 
-.navigation-link {
+.navigation-link, .categories-title {
     position: relative;
-    padding: 5px 5px;
-    color: #010101;
-    font-size: 15px;
-    line-height: 1;
+    padding: 5px;
     text-transform: uppercase;
-    text-decoration: none;
-}
-
-.navigation-link::before, .navigation-link::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    content: "";
-    height: 0px;
-    width: 0px;
-    opacity: 0;
-    position: absolute;
-    transition: all 0.6s;
-}
-
-.navigation-link::before {
-  top: 0;
-  left: 0;
-  border-top: 1px solid #26d0aa;
-  border-left: 1px solid #26d0aa;
-}
-
-.navigation-link::after {
-  bottom: 0;
-  right: 0;
-  border-bottom: 1px solid #26d0aa;
-  border-right: 1px solid #26d0aa;
-}
-
-.navigation-link:hover::before,
-.navigation-link:hover::after {
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  transition: all 0.3s;
 }
 
 .navigation-link_checked::before,
@@ -61,37 +23,31 @@
 
 .categories {
     position: relative;
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .categories-title {
-    line-height: 1;
-    color: #010101;
-    text-transform: uppercase;
-    font-size: 15px;
-    padding: 5px 5px;
     transition: color 0.2s ease;
 }
 
 .categories-title:hover {
-    color: #26d0aa;
+    color: var(--color2)
 }
 
 .categories__list {
-    width: 100%;
-    padding: 5px 0 5px;
+    width: 120%;
     position: absolute;
-    top: 20px;
+    top: 40px;
+    padding-left: 10px;
     opacity: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     row-gap: 10px;
-    background-color: #f9fafc;
-    box-shadow: 5px 5px 5px #e3e4e6;
+    background-color: var(--color4);
+    box-shadow: 5px 5px 5px var(--color5);
     transition: opacity 0.9s ease;
     list-style-position: inside;
 }
@@ -101,9 +57,6 @@
 }
 
 .categories__item {
-    text-decoration: none;
-    color: #010101;
-    font-size: 15px;
     cursor: pointer;
     transition: list-style-image 0.3s ease;
 }
@@ -150,7 +103,7 @@
 
 @media (max-width: 1024px) {
     .navigation {
-        justify-content:flex-end;
+        justify-content: flex-end;
     }
 }
 
@@ -158,9 +111,5 @@
     .navigation {
         gap: 5px 5px;
         width: 70%;
-    }
-
-    .navigation-link, .categories-title, .categories__item {
-        font-size: 10px;
     }
 }

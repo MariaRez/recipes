@@ -5,7 +5,7 @@ import sky from '../../images/main/sky.jpg';
 
 function Main() {
   return (
-    <main className='main'>
+    <main className='main section'>
       <div className='main__image-container'>
         <img className='main__image' alt='' src={glass}></img>
         <img className='main__image' alt='' src={bread}></img>

@@ -1,29 +1,9 @@
-.page-not-found {
-    width: 100%;
-    margin: 200px 0 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .page-not-found__title {
-    margin: 10px 0 10px;
     max-width: 600px;
-    color: #3d3d40;
-    font-size: 52px;
-    line-height: 1;
     text-align: center;
 }
 
-.page-not-found__description {
-    margin: 10px 0 10px;
-    font-size: 20px;
-    color: #3d3d40;
-}
-
 .page-not-found__button {
-    margin: 0;
-    padding: 0;
     width: 70px;
     height: 70px;
     border: none;
@@ -31,8 +11,8 @@
 }
 
 .page-not-found__button-image {
-    width: 70px;
-    height: 70px;
+    max-width: 70px;
+    max-height: 70px;
 }
 
 .page-not-found__button-image:hover {
@@ -40,36 +20,20 @@
 }
 
 @media (max-width: 768px) {
-    .page-not-found {
-        margin: 150px 0 100px;
-    }
-
-    .page-not-found__title {
-        margin: 7px 0 7px;
-        max-width: 400px;
-        font-size: 40px;
-    }
-
-    .page-not-found__description {
-        margin: 7px 0 7px;
-        font-size: 15px;
-    }
 
     .page-not-found__button {
-        width: 50px;
-        height: 50px;
+        max-width: 50px;
+        max-height: 50px;
     }
     
     .page-not-found__button-image {
-        width: 50px;
-        height: 50px;
+        max-width: 50px;
+        max-height: 50px;
     }
 }
 
 @media (max-width: 425px) {
     .page-not-found__title {
-        margin: 7px 0 7px;
         max-width: 400px;
-        font-size: 30px;
     }
 }

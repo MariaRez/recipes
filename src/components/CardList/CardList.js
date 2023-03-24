@@ -3,7 +3,7 @@ import './CardList.css';
 
 function CardList({title}) {
     return (
-        <section className='card-list'>
+        <section className='card-list section'>
             <h3 className='card-list__title'>Категория: {title}</h3>
             <ul className='card-list__items'>
                 <li><Card/></li>

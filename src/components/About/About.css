@@ -1,34 +1,23 @@
 .about {
     position: relative;
-    padding: 25px 70px 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     row-gap: 15px;
 }
 
 .about-text {
-    margin: 0;
     max-width: 80%;
     text-align: center;
-    font-size: 15px;
 }
 
 .about-fotos {
-    width: 100%;
-    padding: 0;
     display: flex;
-    flex-direction: row;
-    list-style: none;
     justify-content: center;
-    column-gap: 15px;
-    row-gap: 15px;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
 .about-foto {
     width: 200px;
-    box-shadow: 5px 5px 5px #e3e4e6;
+    box-shadow: 5px 5px 5px var(--color5);
 }
 
 @media (max-width: 1280px) {
