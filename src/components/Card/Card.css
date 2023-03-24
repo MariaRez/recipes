@@ -2,7 +2,7 @@
     display: block;
     padding: 15px;
     height: 200px;
-    background-image: url('https://images.unsplash.com/photo-1677896263326-18a6681eb9dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80');
+    background-image: url('https://images.unsplash.com/photo-1677414283794-677bdf6dc6c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80');
     background-size: 100%;
     transition: background-size 1.5s ease;
     background-position: center;

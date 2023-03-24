@@ -9,7 +9,7 @@ function Navigation() {
         <Link className={`navigation-link  ${location.pathname === "/about" ? "navigation-link_checked" : ""}`} to='/about'>О проекте</Link>
         <Link className={`navigation-link  ${location.pathname === "/contacts" ? "navigation-link_checked" : ""}`} to='/contacts'>Контакты</Link>
         <div className='categories'>
-            <span className="categories-title">Категории</span>
+            <h3 className="categories-title">Категории</h3>
             <ul className="categories__list">
               <li className='categories__item categories__item_breakfast'>
                 <Link className='categories__item'>Завтрак</Link>

@@ -34,11 +34,3 @@ h1 {
   font-style: italic;
   font-weight: bold;
 }
-
-h2, h3, h4 {
-  font-weight: bold;
-}
-
-h5, h6, span, li, a, button, input, fieldset, label {
-  font-weight: normal;
-}

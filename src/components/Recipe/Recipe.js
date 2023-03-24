@@ -58,9 +58,9 @@ function Recipe() {
             </div>
           </div>
           <div className="instruction section">
-            <span className="instruction-title">
+            <h3 className="instruction-title">
               Инструкция по приготовлению
-            </span>
+            </h3>
             <ol className="instruction-list">
               <li className="instruction-list-item">
                 На сухой сковороде по 1 минуте с каждой стороны прогреть

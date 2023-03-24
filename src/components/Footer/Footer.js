@@ -3,7 +3,7 @@ import './Footer.css';
 function Footer() {
     return (
         <footer className='footer'>
-            <span className='footer__copy'>&copy; {new Date().getFullYear()}</span>
+            <h5 className='footer__copy'>&copy; {new Date().getFullYear()}</h5>
         </footer>
     );
   }

@@ -17,7 +17,7 @@ function Contacts() {
           alt="Главное изображение на странице Контакты"
           className="contacts-main-image"
         ></img>
-        <span className="contacts-text">Напишите мне</span>
+        <h4 className="contacts-text">Напишите мне</h4>
         <h3 className="contacts-title">У вас есть что сказать мне?</h3>
         <p className="contacts-description">
           Отправьте мне сообщение ниже, и я обязательно свяжусь с вами, как
