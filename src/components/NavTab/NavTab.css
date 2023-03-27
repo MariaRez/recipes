@@ -1,0 +1,38 @@
+.nav-tab {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.nav-tab-main-link, .nav-tab-title {
+  position: relative;
+  padding: 14px 20px;
+}
+
+.nav-tab-title {
+  display: inline-block;
+}
+
+.nav-tab-title::before {
+  content: " ";
+  background: var(--color1);
+  width: 1px;
+  height: 50%;
+  left: -15px;
+  top: 25%;
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .nav-tab {
+    column-gap: 20px;
+  }
+
+  .nav-tab-main-link, .nav-tab-title {
+    padding: 7px 10px;
+  }
+  
+  .nav-tab-title::before {
+    left: -10px;
+  }
+}

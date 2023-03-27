@@ -1,0 +1,115 @@
+.navigation {
+    width: 40%;
+    max-width: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.navigation-link, .categories-title {
+    position: relative;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.navigation-link_checked::before,
+.navigation-link_checked::after {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.categories {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categories-title {
+    transition: color 0.2s ease;
+}
+
+.categories-title:hover {
+    color: var(--color2)
+}
+
+.categories__list {
+    width: 120%;
+    position: absolute;
+    top: 40px;
+    padding-left: 10px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+    background-color: var(--color4);
+    box-shadow: 5px 5px 5px var(--color5);
+    transition: opacity 0.9s ease;
+    list-style-position: inside;
+}
+
+.categories:hover .categories__list  {
+    opacity: 1;
+}
+
+.categories__item {
+    cursor: pointer;
+    transition: list-style-image 0.3s ease;
+}
+
+.categories__item_breakfast {
+    list-style-image: url("/src/images/breakfast.svg");
+}
+
+.categories__item_breakfast:hover {
+    list-style-image: url("/src/images/breakfast-hover.svg");
+}
+
+.categories__item_lunch {
+    list-style-image: url("/src/images/lunch.svg");
+}
+
+.categories__item_lunch:hover {
+    list-style-image: url("/src/images/lunch-hover.svg");
+}
+
+.categories__item_dinner {
+    list-style-image: url("/src/images/dinner.svg");
+}
+
+.categories__item_dinner:hover {
+    list-style-image: url("/src/images/dinner-hover.svg");
+}
+
+.categories__item_snack {
+    list-style-image: url("/src/images/apple.svg");
+}
+
+.categories__item_snack:hover {
+    list-style-image: url("/src/images/apple-hover.svg");
+}
+
+.categories__item_all {
+    list-style-image: url("/src/images/salad.svg");
+}
+
+.categories__item_all:hover {
+    list-style-image: url("/src/images/salad-hover.svg");
+}
+
+@media (max-width: 1024px) {
+    .navigation {
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        gap: 5px 5px;
+        width: 70%;
+    }
+}

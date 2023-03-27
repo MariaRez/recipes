@@ -1,0 +1,131 @@
+.contacts-main-image {
+  width: 80%;
+  min-width: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contacts-title {
+  text-align: center;
+}
+
+.contacts-description {
+  margin: 15px 0 0;
+  width: 80%;
+  min-width: 300px;
+  text-align: center;
+}
+
+.contacts-form {
+  width: 80%;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 70px 150px;
+  grid-gap: 20px 30px;
+}
+
+.contacts-fieldset {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.contacts-fieldset_size_big {
+  grid-column: span 2;
+}
+
+.contacts-label {
+  padding-bottom: 7px;
+  /* font-family: "Gentium Book Plus", "Times"; */
+}
+
+.contacts-label::after {
+  content: "*";
+}
+
+.contacts-input {
+  color: var(--color1);
+  border: 1px solid rgba(61, 61, 64, 0.15);
+  padding: 10px 20px;
+  vertical-align: baseline;
+}
+
+.contacts-input:active,
+.contacts-input:focus {
+  outline: 0;
+  outline-offset: 0;
+  border: 1px solid var(--color2);
+}
+
+.contacts-input_size_big {
+  height: 100px;
+}
+
+.input-status {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+}
+
+.input-status_last {
+  bottom: 25px;
+}
+
+.contacts-input:invalid + .input-status::before {
+  content: "✖";
+  color: var(--color3);
+}
+
+.contacts-input:valid + .input-status::before {
+  content: "✓";
+  color: var(--color2);
+}
+
+.contacts-input:invalid:placeholder-shown {
+  border: 1px solid rgba(61, 61, 64, 0.15);
+}
+
+.contacts-input:invalid:placeholder-shown + .input-status::before,
+.contacts-input:placeholder-shown + .input-status::before {
+  visibility: hidden;
+}
+
+.contacts-button {
+  border: none;
+  background-color: transparent;
+  height: 50px;
+  position: relative;
+  padding: 14px 20px;
+  justify-self: center;
+}
+
+.contacts-button:hover {
+  cursor: pointer;
+}
+
+.contacts-button_disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+@media (max-width: 768px) {
+  .contacts-title {
+    max-width: 90%;
+  }
+
+  .contacts-form {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 70px) 150px;
+    grid-gap: 15px 0px;
+  }
+
+  .contacts-fieldset_size_big {
+    grid-column: 1 / 1;
+  }
+  .contacts-button {
+    height: 30px;
+    padding: 7px 10px;
+  }
+}

@@ -1,0 +1,35 @@
+.main__image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    width: 80%;
+    min-width: 300px;
+    max-width: 768px;
+}
+
+.main-text {
+    display: inline-block;
+}
+
+.main-title, .main-description {
+    text-align: center;
+    max-width: 600px;
+}
+
+.main-title {
+    line-height: 1;
+}
+
+.about-link {
+    margin-top: 15px;
+    position: relative;
+    padding: 14px 20px;
+  }
+
+.main__items {
+    padding: 15px 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    gap: 15px;
+    justify-content: center;
+}
