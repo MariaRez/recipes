@@ -21,13 +21,7 @@
 @media (max-width: 768px) {
     .card-list__items {
         padding: 15px 10px 5px;
-        grid-template-columns: repeat(2, 250px);
         gap: 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    .card-list__items {
         grid-template-columns: 300px;
     }
 }

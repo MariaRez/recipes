@@ -74,7 +74,7 @@ footer {
 .instruction-list-item,
 .main-description,
 .recipe-description,
-.nutrition {
+.nutrition__text {
   font-size: 15px;
 }
 
@@ -257,11 +257,8 @@ textarea {
   .categories-title,
   .categories__item,
   .card__description,
-  .ingredients-table,
   .about-text,
-  .contacts-label,
-  .recipe-description,
-  .nutrition {
+  .contacts-label {
     font-size: 10px;
   }
 

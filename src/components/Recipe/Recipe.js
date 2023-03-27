@@ -23,9 +23,9 @@ function Recipe() {
         </p>
         <div className="nutrition">
           <h4 className="nutrition__title">КБЖУ</h4>
-          <p>Рецепт рассчитан на 4 порции</p>
-          <p>Каждая порция содержит в себе:</p>
-          <p>Белок - 18,5 Жиры - 24 Углеводы - 37,9 Пищевые волокна - 5,3 Ккал - 447</p>
+          <p className="nutrition__text">Рецепт рассчитан на <span className="nutrition__text-span">4 порции</span></p>
+          <p className="nutrition__text">Каждая порция содержит в себе:</p>
+          <p className="nutrition__text">Белок - 18,5 Жиры - 24 Углеводы - 37,9 Пищевые волокна - 5,3 Ккал - 447</p>
         </div>
         <table className="ingredients-table">
           <caption className="ingredients-title">
