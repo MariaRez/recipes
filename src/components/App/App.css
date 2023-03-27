@@ -28,6 +28,7 @@ footer {
 .page-not-found__title,
 .page-not-found__description,
 .recipe-title,
+.nutrition__title,
 .ingredients-table,
 .instruction-title,
 .instruction-list,
@@ -39,7 +40,9 @@ footer {
 .contacts-button,
 .main-title,
 .main-description,
-.about-link {
+.about-link,
+.recipe-description,
+.nutrition {
   color: var(--color1);
 }
 
@@ -69,7 +72,9 @@ footer {
 .contacts-description,
 .contacts-label,
 .instruction-list-item,
-.main-description {
+.main-description,
+.recipe-description,
+.nutrition {
   font-size: 15px;
 }
 
@@ -84,6 +89,7 @@ footer {
 .owner-info-description,
 .page-not-found__description,
 .recipe-title,
+.nutrition__title,
 .card-list__title,
 .main-description,
 .about-link {
@@ -253,7 +259,9 @@ textarea {
   .card__description,
   .ingredients-table,
   .about-text,
-  .contacts-label {
+  .contacts-label,
+  .recipe-description,
+  .nutrition {
     font-size: 10px;
   }
 
@@ -264,6 +272,7 @@ textarea {
   .main-text,
   .page-not-found__description,
   .recipe-title,
+  .nutrition__title,
   .ingredients-title,
   .instruction-title,
   .card-list__title,
