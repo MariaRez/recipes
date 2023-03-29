@@ -21,7 +21,7 @@
   min-width: 300px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 70px 150px;
+  grid-template-rows: repeat(3, auto);
   grid-gap: 20px 30px;
 }
 
@@ -30,6 +30,7 @@
   display: flex;
   flex-direction: column;
   border: none;
+  padding: 0;
 }
 
 .contacts-fieldset_size_big {
@@ -38,7 +39,6 @@
 
 .contacts-label {
   padding-bottom: 7px;
-  /* font-family: "Gentium Book Plus", "Times"; */
 }
 
 .contacts-label::after {
@@ -65,22 +65,24 @@
 
 .input-status {
   position: absolute;
-  right: 20px;
-  bottom: 0;
+  right: 10px;
+  bottom: 10px;
 }
 
 .input-status_last {
-  bottom: 25px;
+  bottom: 30px;
 }
 
 .contacts-input:invalid + .input-status::before {
   content: "✖";
   color: var(--color3);
+  font-size: 0.15rem;
 }
 
 .contacts-input:valid + .input-status::before {
   content: "✓";
   color: var(--color2);
+  font-size: 0.15rem;
 }
 
 .contacts-input:invalid:placeholder-shown {
@@ -99,6 +101,7 @@
   position: relative;
   padding: 14px 20px;
   justify-self: center;
+  line-height: 1;
 }
 
 .contacts-button:hover {
@@ -117,7 +120,7 @@
 
   .contacts-form {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 70px) 150px;
+    grid-template-rows: repeat(2, 70px) 150px repeat(2, auto);
     grid-gap: 15px 0px;
   }
 

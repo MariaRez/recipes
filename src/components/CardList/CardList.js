@@ -5,7 +5,7 @@ import taco from "../../images/recipes/taco.jpeg";
 function CardList({ title }) {
   return (
     <section className="card-list section">
-      <h3 className="card-list__title">Категория: {title}</h3>
+      <h3 className="card-list__title dark-color-text medium-text small-letter-spacing">Категория: {title}</h3>
       <ul className="card-list__items">
         <li>
           <Card

@@ -24,13 +24,29 @@
   letter-spacing: 1px;
 }
 
+html {
+  font-size: 100px;
+}
+
 body {
   margin: 0;
   background-color: var(--color4);
   font-family: "Gentium Book Plus", Times;
 }
 
+header,
+footer {
+  padding: 7px 30px;
+  background-color: var(--color4);
+}
+
 h1 {
   font-style: italic;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 80px;
+  }
 }

@@ -3,12 +3,6 @@
   min-width: 320px;
 }
 
-header,
-footer {
-  padding: 7px 30px;
-  background-color: var(--color4);
-}
-
 /* для секции */
 .section {
   margin: 30px 0;
@@ -17,93 +11,39 @@ footer {
   align-items: center;
 }
 
-.navigation-link,
-.footer__copy,
-.categories-title,
-.categories__item,
-.nav-tab-main-link,
-.owner-info-description,
-.owner-info-title,
-.main-text,
-.page-not-found__title,
-.page-not-found__description,
-.recipe-title,
-.nutrition__title,
-.ingredients-table,
-.instruction-title,
-.instruction-list,
-.card-list__title,
-.contacts-text,
-.contacts-title,
-.contacts-description,
-.contacts-label,
-.contacts-button,
-.main-title,
-.main-description,
-.about-link,
-.recipe-description,
-.nutrition {
+.dark-color-text {
   color: var(--color1);
 }
 
-.nav-tab-title {
-  color: var(--color2);
+.green-color-text {
+  color: var(--color2)
 }
 
-.card__title,
-.card__description {
+.white-color-text {
   color: var(--color4);
 }
 
-.owner-info-title,
-.page-not-found__title,
-.contacts-title,
-.main-title {
-  font-size: 45px;
+.big-text {
+  font-size: 0.45rem;
 }
 
-.navigation-link,
-.footer__copy,
-.categories-title,
-.categories__item,
-.card__description,
-.ingredients-table,
-.about-text,
-.contacts-description,
-.contacts-label,
-.instruction-list-item,
-.main-description,
-.recipe-description,
-.nutrition__text {
-  font-size: 15px;
+.medium-text {
+  font-size: 0.2rem;
 }
 
-.nav-tab-main-link,
-.nav-tab-title,
-.contacts-text,
-.contacts-button,
-.main-text,
-.ingredients-title,
-.instruction-title,
-.card__title,
-.owner-info-description,
-.page-not-found__description,
-.recipe-title,
-.nutrition__title,
-.card-list__title,
-.main-description,
-.about-link {
-  font-size: 20px;
+.small-text {
+  font-size: 0.15rem;
+}
+
+.small-letter-spacing {
   letter-spacing: 2px;
 }
 
-.nav-tab-main-link,
-.nav-tab-title,
-.contacts-text,
-.contacts-button,
-.main-text,
-.ingredients-title,
-.instruction-title {
+.medium-border-radius {
+  border-radius: 15px;
+}
+
+.upper-text {
   text-transform: uppercase;
 }
 
@@ -116,12 +56,6 @@ footer {
 input,
 textarea {
   border-radius: 5px;
-}
-
-.card,
-.card__overlay,
-.recipe-image {
-  border-radius: 15px;
 }
 
 .navigation-link::before,
@@ -245,42 +179,6 @@ textarea {
     padding: 7px 15px;
   }
 
-  .owner-info-title,
-  .page-not-found__title,
-  .contacts-title,
-  .main-title {
-    font-size: 30px;
-  }
-
-  .navigation-link,
-  .footer__copy,
-  .categories-title,
-  .categories__item,
-  .card__description,
-  .about-text,
-  .contacts-label {
-    font-size: 10px;
-  }
-
-  .nav-tab-main-link,
-  .nav-tab-title,
-  .card__title,
-  .owner-info-description,
-  .main-text,
-  .page-not-found__description,
-  .recipe-title,
-  .nutrition__title,
-  .ingredients-title,
-  .instruction-title,
-  .card-list__title,
-  .contacts-text,
-  .contacts-button,
-  .contacts-description,
-  .main-description,
-  .about-link {
-    font-size: 15px;
-  }
-
   .page-not-found__title,
   .page-not-found__description,
   .recipe-title {
@@ -305,9 +203,7 @@ textarea {
   .contacts-main-image,
   .contacts-text,
   .contacts-title,
-  .main-title,
-  .contacts-form,
-  .main-text {
+  .contacts-form {
     margin-top: 15px;
   }
 }

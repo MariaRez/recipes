@@ -33,3 +33,9 @@
     gap: 15px;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+    .main-title, .main-description {
+        max-width: 300px;
+}
+}
