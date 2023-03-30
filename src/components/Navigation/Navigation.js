@@ -5,9 +5,9 @@ function Navigation() {
     const location = useLocation();
     return (
     <nav className='navigation'>
-        <Link className={`navigation-link dark-color-text small-text ${location.pathname === "/" ? "navigation-link_checked" : ""}`} to='/'>Главная</Link>
-        <Link className={`navigation-link dark-color-text small-text ${location.pathname === "/about" ? "navigation-link_checked" : ""}`} to='/about'>О проекте</Link>
-        <Link className={`navigation-link dark-color-text small-text ${location.pathname === "/contacts" ? "navigation-link_checked" : ""}`} to='/contacts'>Контакты</Link>
+        <Link className={`navigation-link active-element active-element-implicit dark-color-text small-text ${location.pathname === "/" ? "active-element_checked" : ""}`} to='/'>Главная</Link>
+        <Link className={`navigation-link active-element active-element-implicit dark-color-text small-text ${location.pathname === "/about" ? "active-element_checked" : ""}`} to='/about'>О проекте</Link>
+        <Link className={`navigation-link active-element active-element-implicit dark-color-text small-text ${location.pathname === "/contacts" ? "active-element_checked" : ""}`} to='/contacts'>Контакты</Link>
         <div className='categories'>
             <h3 className="categories-title small-text dark-color-text">Категории</h3>
             <ul className="categories__list">

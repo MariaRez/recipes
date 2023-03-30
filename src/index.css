@@ -49,4 +49,9 @@ h1 {
   html {
     font-size: 80px;
   }
+
+  header,
+  footer {
+    padding: 7px 15px;
+  }
 }

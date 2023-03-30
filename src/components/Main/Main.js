@@ -18,7 +18,7 @@ function Main() {
         Считаю что еду нужно любить и почитать, а готовить лучшее занятие на
         планете
       </h5>
-      <Link className="about-link dark-color-text medium-text small-letter-spacing" to="/about">Читать далее</Link>
+      <Link className="about-link active-element dark-color-text medium-text small-letter-spacing" to="/about">Читать далее</Link>
       <h4 className="main-text dark-color-text medium-text upper-text">Избранные рецепты</h4>
       <p className="medium-text">Будут добавлены позже &#128105;&#8205;&#128187;</p>
       <h4 className="main-text dark-color-text medium-text upper-text">Последние рецепты</h4>

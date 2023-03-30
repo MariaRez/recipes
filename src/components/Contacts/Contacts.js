@@ -36,7 +36,7 @@ function Contacts() {
               required
               minLength="2"
               maxLength="30"
-              className="contacts-input small-text"
+              className="contacts-input small-text small-border-radius"
             />
             <span className="input-status small-text"></span>
           </fieldset>
@@ -53,7 +53,7 @@ function Contacts() {
               required
               minLength="2"
               maxLength="50"
-              className="contacts-input small-text"
+              className="contacts-input small-text small-border-radius"
             />
             <span className="input-status small-text"></span>
           </fieldset>
@@ -69,21 +69,21 @@ function Contacts() {
               required
               minLength="2"
               maxLength="1000"
-              className="contacts-input contacts-input_size_big small-text"
+              className="contacts-input contacts-input_size_big small-text small-border-radius"
             />
             <span className="input-status small-text input-status_last"></span>
           </fieldset>
           <button
             type="submit"
             aria-label="Отправить сообщение"
-            className="contacts-button dark-color-text medium-text small-letter-spacing upper-text"
+            className="contacts-button active-element dark-color-text medium-text small-letter-spacing upper-text"
           >
             Отправить сообщение
           </button>
           <button
             type="reset"
             aria-label="Очистить"
-            className="contacts-button dark-color-text medium-text small-letter-spacing upper-text"
+            className="contacts-button active-element dark-color-text medium-text small-letter-spacing upper-text"
           >
             Очистить форму
           </button>

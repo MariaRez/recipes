@@ -3,7 +3,7 @@
   min-width: 320px;
 }
 
-/* для секции */
+/* для секций */
 .section {
   margin: 30px 0;
   display: flex;
@@ -11,6 +11,7 @@
   align-items: center;
 }
 
+/* классы для цвета текстовых элементов */
 .dark-color-text {
   color: var(--color1);
 }
@@ -23,6 +24,7 @@
   color: var(--color4);
 }
 
+/* классы для определения размера шрифта текстовых элементов */
 .big-text {
   font-size: 0.45rem;
 }
@@ -35,37 +37,28 @@
   font-size: 0.15rem;
 }
 
+/* расстояние между буквами */
 .small-letter-spacing {
   letter-spacing: 2px;
 }
 
+/* размер радиуса */
 .medium-border-radius {
   border-radius: 15px;
 }
 
+.small-border-radius {
+  border-radius: 5px;
+}
+
+/* текст в верхнем регистре */
 .upper-text {
   text-transform: uppercase;
 }
 
-.page-not-found__title,
-.page-not-found__description,
-.recipe-title {
-  margin: 10px 0;
-}
-
-input,
-textarea {
-  border-radius: 5px;
-}
-
-.navigation-link::before,
-.navigation-link::after,
-.nav-tab-main-link::before,
-.nav-tab-main-link::after,
-.contacts-button::before,
-.contacts-button::after,
-.about-link::before,
-.about-link::after {
+/* активная кнопка или ссылка */
+.active-element::before,
+.active-element::after {
   content: "";
   height: 14px;
   width: 14px;
@@ -73,49 +66,46 @@ textarea {
   position: absolute;
   transition: all 0.6s;
 }
-
-.navigation-link::before,
-.navigation-link::after {
-  content: "";
-  height: 14px;
-  width: 14px;
+/* стиль изначально скрыт от пользователя */
+.active-element-implicit::before,
+.active-element-implicit::after {
   opacity: 0;
-  position: absolute;
-  transition: all 0.6s;
 }
 
-.navigation-link::before,
-.nav-tab-main-link::before,
-.contacts-button::before,
-.about-link::before {
+.active-element::before {
   top: 0;
   left: 0;
   border-top: 1px solid var(--color2);
   border-left: 1px solid var(--color2);
 }
 
-.navigation-link::after,
-.nav-tab-main-link::after,
-.contacts-button::after,
-.about-link::after {
+.active-element::after {
   bottom: 0;
   right: 0;
   border-bottom: 1px solid var(--color2);
   border-right: 1px solid var(--color2);
 }
 
-.navigation-link:hover::before,
-.navigation-link:hover::after,
-.nav-tab-main-link:hover::before,
-.nav-tab-main-link:hover::after,
-.contacts-button:hover::before,
-.contacts-button:hover::after,
-.about-link:hover::before,
-.about-link:hover::after {
+.active-element:hover::before,
+.active-element:hover::after {
   width: 100%;
   height: 100%;
   opacity: 1;
   transition: all 0.3s;
+}
+
+/* стиль для того чтобы понимать, что данная страница выбрана */
+.active-element_checked::before,
+.active-element_checked::after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.page-not-found__title,
+.page-not-found__description,
+.recipe-title {
+  margin: 10px 0;
 }
 
 /* картинки на фоне */
@@ -172,11 +162,6 @@ textarea {
 @media (max-width: 768px) {
   .section {
     margin: 20px 0;
-  }
-
-  header,
-  footer {
-    padding: 7px 15px;
   }
 
   .page-not-found__title,
