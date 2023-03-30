@@ -1,3 +1,4 @@
+import NavButtons from "../NavButtons/NavButtons";
 import "./OwnerInfo.css";
 
 function OwnerInfo() {
@@ -9,6 +10,7 @@ function OwnerInfo() {
       <h2 className="owner-info-description dark-color-text medium-text small-letter-spacing">
         Марии Резник
       </h2>
+      <NavButtons />
     </section>
   );
 }
