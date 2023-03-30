@@ -17,15 +17,22 @@ function Contacts() {
           alt="Главное изображение на странице Контакты"
           className="contacts-main-image"
         ></img>
-        <h4 className="contacts-text dark-color-text medium-text small-letter-spacing upper-text">Напишите мне</h4>
-        <h3 className="contacts-title dark-color-text big-text">У вас есть что сказать мне?</h3>
+        <h4 className="contacts-text dark-color-text medium-text small-letter-spacing upper-text">
+          Напишите мне
+        </h4>
+        <h3 className="contacts-title dark-color-text big-text">
+          У вас есть что сказать мне?
+        </h3>
         <p className="contacts-description dark-color-text small-text">
           Отправьте мне сообщение ниже, и я обязательно свяжусь с вами, как
           только смогу. Спасибо!
         </p>
         <form className="contacts-form" name="contact" onSubmit={handleSubmit}>
           <fieldset className="contacts-fieldset">
-            <label className="contacts-label dark-color-text small-text" htmlFor="name">
+            <label
+              className="contacts-label dark-color-text small-text"
+              htmlFor="name"
+            >
               Имя
             </label>
             <input

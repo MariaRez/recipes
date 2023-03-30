@@ -4,7 +4,8 @@
   column-gap: 30px;
 }
 
-.nav-tab-main-link, .nav-tab-title {
+.nav-tab-main-link,
+.nav-tab-title {
   position: relative;
   padding: 14px 20px;
 }
@@ -28,10 +29,11 @@
     column-gap: 20px;
   }
 
-  .nav-tab-main-link, .nav-tab-title {
+  .nav-tab-main-link,
+  .nav-tab-title {
     padding: 7px 10px;
   }
-  
+
   .nav-tab-title::before {
     left: -10px;
   }

@@ -17,7 +17,7 @@
 }
 
 .green-color-text {
-  color: var(--color2)
+  color: var(--color2);
 }
 
 .white-color-text {
@@ -109,7 +109,7 @@
 }
 
 /* картинки на фоне */
-.background-image {
+.app__background-image {
   position: absolute;
   z-index: -3;
   opacity: 0.05;
@@ -119,32 +119,32 @@
   background-size: cover;
 }
 
-.background-image_broccoli {
+.app__background-image_type_broccoli {
   top: 70px;
   right: 70px;
   transform: rotate(30deg);
-  background-image: url(../../images/lunch.svg);
+  background-image: url(../../images/markers/lunch.svg);
 }
 
-.background-image_apple {
+.app__background-image_type_apple {
   bottom: 0;
   left: 70px;
   transform: rotate(210deg);
-  background-image: url(../../images/apple.svg);
+  background-image: url(../../images/markers/apple.svg);
 }
 
 @media (max-width: 1024px) {
-  .background-image {
+  .app__background-image {
     width: 300px;
     height: 300px;
   }
 
-  .background-image_broccoli {
+  .app__background-image_type_broccoli {
     right: 50px;
     transform: rotate(30deg);
   }
 
-  .background-image_apple {
+  .app__background-image_type_apple {
     left: 50px;
   }
 }
@@ -170,17 +170,17 @@
     margin: 7px 0;
   }
 
-  .background-image {
+  .app__background-image {
     width: 200px;
     height: 200px;
   }
 
-  .background-image_broccoli {
+  .app__background-image_type_broccoli {
     right: 30px;
     transform: rotate(30deg);
   }
 
-  .background-image_apple {
+  .app__background-image_type_apple {
     left: 30px;
     bottom: 70px;
   }

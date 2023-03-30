@@ -1,27 +1,27 @@
 .card-list__items {
-    padding: 25px 30px 15px;
-    display: grid;
-    grid-template-columns: repeat(3, 400px);
-    gap: 15px;
-    justify-content: center;
+  padding: 25px 30px 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  gap: 15px;
+  justify-content: center;
 }
 
 @media (max-width: 1280px) {
-    .card-list__items {
-        grid-template-columns: repeat(3, 300px);
-    }
+  .card-list__items {
+    grid-template-columns: repeat(3, 300px);
+  }
 }
 
 @media (max-width: 1024px) {
-    .card-list__items {
-        grid-template-columns: repeat(2, 300px);
-    }
+  .card-list__items {
+    grid-template-columns: repeat(2, 300px);
+  }
 }
 
 @media (max-width: 768px) {
-    .card-list__items {
-        padding: 15px 10px 5px;
-        gap: 10px;
-        grid-template-columns: 300px;
-    }
+  .card-list__items {
+    padding: 15px 10px 5px;
+    gap: 10px;
+    grid-template-columns: 300px;
+  }
 }

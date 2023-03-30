@@ -1,31 +1,31 @@
 .header {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .social-media-links {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .social-media-link-image {
-    max-width: 50px;
-    max-height: 50px;
-    transition: transform 1.5s;
+  max-width: 50px;
+  max-height: 50px;
+  transition: transform 1.5s;
 }
 
 .social-media-link-image:hover {
-    transform: scale(120%);
-    transition: transform 0.2s;
+  transform: scale(120%);
+  transition: transform 0.2s;
 }
 
 @media (max-width: 768px) {
-    .social-media-link-image {
-        max-width: 30px;
-        max-height: 30px;
-    }
+  .social-media-link-image {
+    max-width: 30px;
+    max-height: 30px;
+  }
 }
