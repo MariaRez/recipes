@@ -1,9 +1,17 @@
 .navigation {
   width: 40%;
   max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 10px;
 }
@@ -17,12 +25,21 @@
 
 .categories {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .categories-title {
+  -webkit-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
 
@@ -36,12 +53,22 @@
   top: 40px;
   padding-left: 10px;
   opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   row-gap: 10px;
   background-color: var(--color4);
+  -webkit-box-shadow: 5px 5px 5px var(--color5);
   box-shadow: 5px 5px 5px var(--color5);
+  -webkit-transition: opacity 0.9s ease;
+  -o-transition: opacity 0.9s ease;
   transition: opacity 0.9s ease;
   list-style-position: inside;
 }
@@ -52,6 +79,8 @@
 
 .categories__item {
   cursor: pointer;
+  -webkit-transition: list-style-image 0.3s ease;
+  -o-transition: list-style-image 0.3s ease;
   transition: list-style-image 0.3s ease;
 }
 
@@ -98,6 +127,8 @@
 
 @media (max-width: 1024px) {
   .navigation {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
   }
 }

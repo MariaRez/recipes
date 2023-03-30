@@ -1,10 +1,52 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .recipe-container {
   margin: 30px 0;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 400px 30px 500px;
   grid-template-columns: 400px 500px;
+  -ms-grid-rows: 50px 30px auto 30px 150px 30px 300px;
   grid-template-rows: 50px auto 150px 300px;
   gap: 30px;
   place-items: start center;
+}
+.recipe-container > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.recipe-container > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.recipe-container > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.recipe-container > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.recipe-container > *:nth-child(5) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+.recipe-container > *:nth-child(6) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+.recipe-container > *:nth-child(7) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+}
+.recipe-container > *:nth-child(8) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
 }
 .recipe-title,
 .nutrition__title {
@@ -23,8 +65,11 @@
 .recipe-image {
   width: 400px;
   height: 400px;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center;
   object-position: center;
+  -ms-grid-row-span: 3;
   grid-row: span 3;
 }
 
@@ -47,9 +92,18 @@
 }
 
 .instruction {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: stretch;
+  -ms-flex-pack: stretch;
   justify-content: stretch;
   text-align: justify;
 }
@@ -74,27 +128,78 @@
 
 @media (max-width: 1024px) {
   .recipe-container {
+    -ms-grid-columns: 300px 400px;
     grid-template-columns: 300px 400px;
+    -ms-grid-rows: 50px auto repeat(2, 150px) auto;
     grid-template-rows: 50px auto repeat(2, 150px) auto;
+  }
+  .recipe-container > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .recipe-container > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .recipe-container > *:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .recipe-container > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  .recipe-container > *:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .recipe-container > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+  .recipe-container > *:nth-child(7) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+  .recipe-container > *:nth-child(8) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+  }
+  .recipe-container > *:nth-child(9) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+  .recipe-container > *:nth-child(10) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
   }
 
   .recipe-image {
     margin-top: 30px;
     width: 300px;
     height: auto;
+    -ms-grid-row-span: 2;
     grid-row: span 2;
   }
 
   .ingredients-table {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 2;
     grid-row: 4/6;
   }
 
   .nutrition {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
     grid-row: 3/4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
   }
 
   .instruction {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
     grid-row: 3/6;
   }
 }
@@ -103,8 +208,34 @@
   .recipe-container {
     margin: 15px 0;
     gap: 15px;
+    -ms-grid-columns: 300px;
     grid-template-columns: 300px;
+    -ms-grid-rows: 40px 15px auto 15px auto 15px auto 15px auto 15px auto;
     grid-template-rows: 40px repeat(5, auto);
+  }
+  .recipe-container > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .recipe-container > *:nth-child(2) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .recipe-container > *:nth-child(3) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+  .recipe-container > *:nth-child(4) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+  }
+  .recipe-container > *:nth-child(5) {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+  }
+  .recipe-container > *:nth-child(6) {
+    -ms-grid-row: 11;
+    -ms-grid-column: 1;
   }
 
   .recipe-title,
@@ -113,32 +244,46 @@
   .nutrition,
   .ingredients-table,
   .instruction {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
   }
 
   .recipe-title {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
   }
 
   .recipe-image {
     margin-top: 0;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
     grid-row: 2/3;
   }
 
   .recipe-description {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
     grid-row: 3/4;
   }
 
   .nutrition {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
     grid-row: 4/5;
   }
 
   .ingredients-table {
     width: 100%;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
     grid-row: 5/6;
   }
 
   .instruction {
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
     grid-row: 6/7;
   }
 

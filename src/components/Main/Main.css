@@ -1,6 +1,10 @@
 .main__image-container {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 80%;
   min-width: 300px;
@@ -29,9 +33,13 @@
 
 .main__items {
   padding: 15px 50px;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 400px 15px 400px;
   grid-template-columns: repeat(2, 400px);
   gap: 15px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
