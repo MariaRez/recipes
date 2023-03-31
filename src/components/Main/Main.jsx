@@ -1,16 +1,17 @@
-import "./Main.css";
-import glass from "../../images/main/glass.jpg";
-import bread from "../../images/main/bread-and-eggs.jpg";
-import sky from "../../images/main/sky.jpg";
-import { Link } from "react-router-dom";
+import React from 'react';
+import './Main.css';
+import { Link } from 'react-router-dom';
+import glass from '../../images/main/glass.jpg';
+import bread from '../../images/main/bread-and-eggs.jpg';
+import sky from '../../images/main/sky.jpg';
 
 function Main() {
   return (
     <main className="main section">
       <div className="main__image-container">
-        <img className="main__image" alt="В ресторане" src={glass}></img>
-        <img className="main__image" alt="Готовим дома" src={bread}></img>
-        <img className="main__image" alt="Кочели" src={sky}></img>
+        <img className="main__image" alt="В ресторане" src={glass} />
+        <img className="main__image" alt="Готовим дома" src={bread} />
+        <img className="main__image" alt="Кочели" src={sky} />
       </div>
       <h4 className="main-text dark-color-text medium-text upper-text">
         Давайте познакомимся

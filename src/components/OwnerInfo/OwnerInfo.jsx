@@ -1,5 +1,6 @@
-import NavButtons from "../NavButtons/NavButtons";
-import "./OwnerInfo.css";
+import React from 'react';
+import NavButtons from '../NavButtons/NavButtons';
+import './OwnerInfo.css';
 
 function OwnerInfo() {
   return (

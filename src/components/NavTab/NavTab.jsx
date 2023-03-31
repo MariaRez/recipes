@@ -1,5 +1,7 @@
-import "./NavTab.css";
-import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
+import React from 'react';
+import './NavTab.css';
+import { Link } from 'react-router-dom';
 
 function NavTab({ title }) {
   return (
@@ -16,5 +18,9 @@ function NavTab({ title }) {
     </div>
   );
 }
+
+NavTab.propTypes = {
+  title: PropTypes.string.isRequired,
+};
 
 export default NavTab;

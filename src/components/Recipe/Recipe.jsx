@@ -1,11 +1,12 @@
-import "./Recipe.css";
-import taco from "../../images/recipes/taco.jpeg";
-import NavTab from "../NavTab/NavTab";
+import React from 'react';
+import './Recipe.css';
+import taco from '../../images/recipes/taco.jpeg';
+import NavTab from '../NavTab/NavTab';
 
 function Recipe() {
   return (
     <section className="recipe section">
-      <NavTab title={"Рецепт"} />
+      <NavTab title="Рецепт" />
       <div className="recipe-container">
         <img
           className="recipe-image medium-border-radius"
@@ -28,7 +29,7 @@ function Recipe() {
             КБЖУ
           </h4>
           <p className="nutrition__text small-text dark-color-text">
-            Рецепт рассчитан на{" "}
+            Рецепт рассчитан на
             <span className="nutrition__text-span">4 порции</span>
           </p>
           <p className="nutrition__text small-text dark-color-text">

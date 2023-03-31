@@ -1,15 +1,16 @@
-import "./About.css";
-import photo1 from "../../images/about/photo1.jpeg";
-import photo2 from "../../images/about/photo2.jpeg";
-import photo3 from "../../images/about/photo3.jpeg";
-import photo4 from "../../images/about/photo4.jpeg";
-import photo5 from "../../images/about/photo5.jpeg";
-import NavTab from "../NavTab/NavTab";
+import React from 'react';
+import './About.css';
+import photo1 from '../../images/about/photo1.jpeg';
+import photo2 from '../../images/about/photo2.jpeg';
+import photo3 from '../../images/about/photo3.jpeg';
+import photo4 from '../../images/about/photo4.jpeg';
+import photo5 from '../../images/about/photo5.jpeg';
+import NavTab from '../NavTab/NavTab';
 
 function About() {
   return (
     <section className="section">
-      <NavTab title={"О проекте"} />
+      <NavTab title="О проекте" />
       <div className="about section">
         <p className="about-text dark-color-text small-text">
           С самых ранних лет моей страстью была готовка. Мама приходила довольно
@@ -21,9 +22,9 @@ function About() {
           пожарить.
         </p>
         <p className="about-text dark-color-text small-text">
-          Многие не понимали такую "одержимость" едой. Серьезно, я говорила о
+          Многие не понимали такую `&quot;`одержимость`&quot;` едой. Серьезно, я говорила о
           ней 24/7, рассказывала про интересные факты о продуктах и блюдах, о
-          найденных в интернете или "Поваренной книге Дарьи Донцовой" рецептах и
+          найденных в интернете или `&quot;`Поваренной книге Дарьи Донцовой`&quot;` рецептах и
           возможности их воплощения в жизнь. Научилась готовить блюда разных
           кухнь и народов мира, но мне не с кем было поделиться своим восторгом
           по поводу современного мира кулинарии.

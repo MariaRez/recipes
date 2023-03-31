@@ -1,5 +1,6 @@
-import { Link, useLocation } from "react-router-dom";
-import "./Navigation.css";
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import './Navigation.css';
 
 function Navigation() {
   const location = useLocation();
@@ -7,7 +8,7 @@ function Navigation() {
     <nav className="navigation">
       <Link
         className={`navigation-link active-element active-element-implicit dark-color-text small-text ${
-          location.pathname === "/" ? "active-element_checked" : ""
+          location.pathname === '/' ? 'active-element_checked' : ''
         }`}
         to="/"
       >
@@ -15,7 +16,7 @@ function Navigation() {
       </Link>
       <Link
         className={`navigation-link active-element active-element-implicit dark-color-text small-text ${
-          location.pathname === "/about" ? "active-element_checked" : ""
+          location.pathname === '/about' ? 'active-element_checked' : ''
         }`}
         to="/about"
       >
@@ -23,7 +24,7 @@ function Navigation() {
       </Link>
       <Link
         className={`navigation-link active-element active-element-implicit dark-color-text small-text ${
-          location.pathname === "/contacts" ? "active-element_checked" : ""
+          location.pathname === '/contacts' ? 'active-element_checked' : ''
         }`}
         to="/contacts"
       >
@@ -35,22 +36,22 @@ function Navigation() {
         </h3>
         <ul className="categories__list">
           <li className="categories__item small-text categories__item_type_breakfast">
-            <Link className="categories__item small-text dark-color-text">
+            <Link to="/*" className="categories__item small-text dark-color-text">
               Завтрак
             </Link>
           </li>
           <li className="categories__item small-text categories__item_type_lunch">
-            <Link className="categories__item small-text dark-color-text">
+            <Link to="/*" className="categories__item small-text dark-color-text">
               Обед
             </Link>
           </li>
           <li className="categories__item small-text categories__item_type_dinner">
-            <Link className="categories__item small-text dark-color-text">
+            <Link to="/*" className="categories__item small-text dark-color-text">
               Ужин
             </Link>
           </li>
           <li className="categories__item small-text categories__item_type_snack">
-            <Link className="categories__item small-text dark-color-text">
+            <Link to="/*" className="categories__item small-text dark-color-text">
               Перекус
             </Link>
           </li>

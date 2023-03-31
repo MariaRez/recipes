@@ -1,8 +1,9 @@
-import "./Header.css";
-import facebook from "../../images/messengers/facebook-cat-tail-svgrepo-com.svg";
-import instagram from "../../images/messengers/instagram-cat-tail-svgrepo-com.svg";
-import whatsApp from "../../images/messengers/chat-message-cat-svgrepo-com.svg";
-import Navigation from "../Navigation/Navigation";
+import React from 'react';
+import './Header.css';
+import facebook from '../../images/messengers/facebook-cat-tail-svgrepo-com.svg';
+import instagram from '../../images/messengers/instagram-cat-tail-svgrepo-com.svg';
+import whatsApp from '../../images/messengers/chat-message-cat-svgrepo-com.svg';
+import Navigation from '../Navigation/Navigation';
 
 function Header() {
   return (
