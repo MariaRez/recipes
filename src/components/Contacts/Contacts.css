@@ -1,6 +1,10 @@
+.contacts {
+  width: 100%;
+}
 .contacts-main-image {
   width: 80%;
   min-width: 300px;
+  max-width: 768px;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center;
@@ -19,7 +23,6 @@
 }
 
 .contacts-form {
-  width: 80%;
   min-width: 300px;
   display: -ms-grid;
   display: grid;
