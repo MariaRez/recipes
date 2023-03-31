@@ -30,7 +30,7 @@ function Recipe() {
           </h4>
           <p className="nutrition__text small-text dark-color-text">
             Рецепт рассчитан на
-            <span className="nutrition__text-span">4 порции</span>
+            <span className="nutrition__text-span"> 4 порции</span>
           </p>
           <p className="nutrition__text small-text dark-color-text">
             Каждая порция содержит в себе:
