@@ -1,10 +1,17 @@
 .nav-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
   column-gap: 30px;
 }
 
-.nav-tab-main-link, .nav-tab-title {
+.nav-tab-main-link,
+.nav-tab-title {
   position: relative;
   padding: 14px 20px;
 }
@@ -25,13 +32,16 @@
 
 @media (max-width: 768px) {
   .nav-tab {
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
     column-gap: 20px;
   }
 
-  .nav-tab-main-link, .nav-tab-title {
+  .nav-tab-main-link,
+  .nav-tab-title {
     padding: 7px 10px;
   }
-  
+
   .nav-tab-title::before {
     left: -10px;
   }

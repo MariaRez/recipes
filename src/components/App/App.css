@@ -3,108 +3,112 @@
   min-width: 320px;
 }
 
-header,
-footer {
-  padding: 7px 30px;
-  background-color: var(--color4);
-}
-
-/* для секции */
+/* для секций */
 .section {
   margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
-.navigation-link,
-.footer__copy,
-.categories-title,
-.categories__item,
-.nav-tab-main-link,
-.owner-info-description,
-.owner-info-title,
-.main-text,
-.page-not-found__title,
-.page-not-found__description,
-.recipe-title,
-.nutrition__title,
-.ingredients-table,
-.instruction-title,
-.instruction-list,
-.card-list__title,
-.contacts-text,
-.contacts-title,
-.contacts-description,
-.contacts-label,
-.contacts-button,
-.main-title,
-.main-description,
-.about-link,
-.recipe-description,
-.nutrition {
+/* классы для цвета текстовых элементов */
+.dark-color-text {
   color: var(--color1);
 }
 
-.nav-tab-title {
+.green-color-text {
   color: var(--color2);
 }
 
-.card__title,
-.card__description {
+.white-color-text {
   color: var(--color4);
 }
 
-.owner-info-title,
-.page-not-found__title,
-.contacts-title,
-.main-title {
-  font-size: 45px;
+/* классы для определения размера шрифта текстовых элементов */
+.big-text {
+  font-size: 0.45rem;
 }
 
-.navigation-link,
-.footer__copy,
-.categories-title,
-.categories__item,
-.card__description,
-.ingredients-table,
-.about-text,
-.contacts-description,
-.contacts-label,
-.instruction-list-item,
-.main-description,
-.recipe-description,
-.nutrition__text {
-  font-size: 15px;
+.medium-text {
+  font-size: 0.2rem;
 }
 
-.nav-tab-main-link,
-.nav-tab-title,
-.contacts-text,
-.contacts-button,
-.main-text,
-.ingredients-title,
-.instruction-title,
-.card__title,
-.owner-info-description,
-.page-not-found__description,
-.recipe-title,
-.nutrition__title,
-.card-list__title,
-.main-description,
-.about-link {
-  font-size: 20px;
+.small-text {
+  font-size: 0.15rem;
+}
+
+/* расстояние между буквами */
+.small-letter-spacing {
   letter-spacing: 2px;
 }
 
-.nav-tab-main-link,
-.nav-tab-title,
-.contacts-text,
-.contacts-button,
-.main-text,
-.ingredients-title,
-.instruction-title {
+/* размер радиуса */
+.medium-border-radius {
+  border-radius: 15px;
+}
+
+.small-border-radius {
+  border-radius: 5px;
+}
+
+/* текст в верхнем регистре */
+.upper-text {
   text-transform: uppercase;
+}
+
+/* активная кнопка или ссылка */
+.active-element::before,
+.active-element::after {
+  content: "";
+  height: 14px;
+  width: 14px;
+  opacity: 1;
+  position: absolute;
+  transition: all 0.6s;
+}
+/* стиль изначально скрыт от пользователя */
+.active-element-implicit::before,
+.active-element-implicit::after {
+  opacity: 0;
+}
+
+.active-element::before {
+  top: 0;
+  left: 0;
+  border-top: 1px solid var(--color2);
+  border-left: 1px solid var(--color2);
+}
+
+.active-element::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 1px solid var(--color2);
+  border-right: 1px solid var(--color2);
+}
+
+.active-element:hover::before,
+.active-element:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* стиль для того чтобы понимать, что данная страница выбрана */
+.active-element_checked::before,
+.active-element_checked::after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
 }
 
 .page-not-found__title,
@@ -113,79 +117,8 @@ footer {
   margin: 10px 0;
 }
 
-input,
-textarea {
-  border-radius: 5px;
-}
-
-.card,
-.card__overlay,
-.recipe-image {
-  border-radius: 15px;
-}
-
-.navigation-link::before,
-.navigation-link::after,
-.nav-tab-main-link::before,
-.nav-tab-main-link::after,
-.contacts-button::before,
-.contacts-button::after,
-.about-link::before,
-.about-link::after {
-  content: "";
-  height: 14px;
-  width: 14px;
-  opacity: 1;
-  position: absolute;
-  transition: all 0.6s;
-}
-
-.navigation-link::before,
-.navigation-link::after {
-  content: "";
-  height: 14px;
-  width: 14px;
-  opacity: 0;
-  position: absolute;
-  transition: all 0.6s;
-}
-
-.navigation-link::before,
-.nav-tab-main-link::before,
-.contacts-button::before,
-.about-link::before {
-  top: 0;
-  left: 0;
-  border-top: 1px solid var(--color2);
-  border-left: 1px solid var(--color2);
-}
-
-.navigation-link::after,
-.nav-tab-main-link::after,
-.contacts-button::after,
-.about-link::after {
-  bottom: 0;
-  right: 0;
-  border-bottom: 1px solid var(--color2);
-  border-right: 1px solid var(--color2);
-}
-
-.navigation-link:hover::before,
-.navigation-link:hover::after,
-.nav-tab-main-link:hover::before,
-.nav-tab-main-link:hover::after,
-.contacts-button:hover::before,
-.contacts-button:hover::after,
-.about-link:hover::before,
-.about-link:hover::after {
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  transition: all 0.3s;
-}
-
 /* картинки на фоне */
-.background-image {
+.app__background-image {
   position: absolute;
   z-index: -3;
   opacity: 0.05;
@@ -195,37 +128,42 @@ textarea {
   background-size: cover;
 }
 
-.background-image_broccoli {
+.app__background-image_type_broccoli {
   top: 70px;
   right: 70px;
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
   transform: rotate(30deg);
-  background-image: url(../../images/lunch.svg);
+  background-image: url(../../images/markers/lunch.svg);
 }
 
-.background-image_apple {
+.app__background-image_type_apple {
   bottom: 0;
   left: 70px;
+  -webkit-transform: rotate(210deg);
+  -ms-transform: rotate(210deg);
   transform: rotate(210deg);
-  background-image: url(../../images/apple.svg);
+  background-image: url(../../images/markers/apple.svg);
 }
 
 @media (max-width: 1024px) {
-  .background-image {
+  .app__background-image {
     width: 300px;
     height: 300px;
   }
 
-  .background-image_broccoli {
+  .app__background-image_type_broccoli {
     right: 50px;
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
     transform: rotate(30deg);
   }
 
-  .background-image_apple {
+  .app__background-image_type_apple {
     left: 50px;
   }
 }
 
-.contacts-main-image,
 .contacts-text,
 .contacts-title,
 .contacts-form,
@@ -240,64 +178,22 @@ textarea {
     margin: 20px 0;
   }
 
-  header,
-  footer {
-    padding: 7px 15px;
-  }
-
-  .owner-info-title,
-  .page-not-found__title,
-  .contacts-title,
-  .main-title {
-    font-size: 30px;
-  }
-
-  .navigation-link,
-  .footer__copy,
-  .categories-title,
-  .categories__item,
-  .card__description,
-  .about-text,
-  .contacts-label {
-    font-size: 10px;
-  }
-
-  .nav-tab-main-link,
-  .nav-tab-title,
-  .card__title,
-  .owner-info-description,
-  .main-text,
-  .page-not-found__description,
-  .recipe-title,
-  .nutrition__title,
-  .ingredients-title,
-  .instruction-title,
-  .card-list__title,
-  .contacts-text,
-  .contacts-button,
-  .contacts-description,
-  .main-description,
-  .about-link {
-    font-size: 15px;
-  }
-
   .page-not-found__title,
   .page-not-found__description,
   .recipe-title {
     margin: 7px 0;
   }
 
-  .background-image {
+  .app__background-image {
     width: 200px;
     height: 200px;
   }
 
-  .background-image_broccoli {
+  .app__background-image_type_broccoli {
     right: 30px;
-    transform: rotate(30deg);
   }
 
-  .background-image_apple {
+  .app__background-image_type_apple {
     left: 30px;
     bottom: 70px;
   }
@@ -305,9 +201,7 @@ textarea {
   .contacts-main-image,
   .contacts-text,
   .contacts-title,
-  .main-title,
-  .contacts-form,
-  .main-text {
+  .contacts-form {
     margin-top: 15px;
   }
 }
