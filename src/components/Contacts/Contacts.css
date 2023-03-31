@@ -105,55 +105,6 @@
   height: 100px;
 }
 
-.input-status {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-}
-
-.input-status_last {
-  bottom: 30px;
-}
-
-.contacts-input:invalid + .input-status::before {
-  content: "✖";
-  color: var(--color3);
-  font-size: 0.15rem;
-}
-
-.contacts-input:valid + .input-status::before {
-  content: "✓";
-  color: var(--color2);
-  font-size: 0.15rem;
-}
-
-.contacts-input:invalid:-moz-placeholder-shown {
-  border: 1px solid rgba(61, 61, 64, 0.15);
-}
-
-.contacts-input:invalid:-ms-input-placeholder {
-  border: 1px solid rgba(61, 61, 64, 0.15);
-}
-
-.contacts-input:invalid:placeholder-shown {
-  border: 1px solid rgba(61, 61, 64, 0.15);
-}
-
-.contacts-input:invalid:-moz-placeholder-shown + .input-status::before,
-.contacts-input:-moz-placeholder-shown + .input-status::before {
-  visibility: hidden;
-}
-
-.contacts-input:invalid:-ms-input-placeholder + .input-status::before,
-.contacts-input:-ms-input-placeholder + .input-status::before {
-  visibility: hidden;
-}
-
-.contacts-input:invalid:placeholder-shown + .input-status::before,
-.contacts-input:placeholder-shown + .input-status::before {
-  visibility: hidden;
-}
-
 .contacts-button {
   border: none;
   background-color: transparent;

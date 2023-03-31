@@ -1,17 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Contacts.css';
 import main from '../../images/contacts/main.jpeg';
 import NavTab from '../NavTab/NavTab';
 
 function Contacts() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [text, setText] = useState('');
+
+  function handleChangeName(evt) {
+    setName(evt.target.value);
+  }
+
+  function handleChangeEmail(evt) {
+    setEmail(evt.target.value);
+  }
+
+  function handleChangeText(evt) {
+    setText(evt.target.value);
+  }
+
   function handleSubmit(evt) {
     evt.preventDefault();
-    // написать функцию отправки сообщения от пользователя
   }
 
   function handleReset(evt) {
     evt.preventDefault();
-    // написать функцию очистки полей
+    setName('');
+    setEmail('');
+    setText('');
   }
 
   return (
@@ -33,7 +50,7 @@ function Contacts() {
           Отправьте мне сообщение ниже, и я обязательно свяжусь с вами, как
           только смогу. Спасибо!
         </p>
-        <form className="contacts-form" name="contact">
+        <form className="contacts-form" name="contact" onSubmit={handleSubmit}>
           <fieldset className="contacts-fieldset">
             <label
               htmlFor="name"
@@ -51,9 +68,10 @@ function Contacts() {
                 minLength="2"
                 maxLength="30"
                 className="contacts-input small-text small-border-radius"
+                value={name}
+                onChange={handleChangeName}
               />
             </label>
-            <span className="input-status small-text" />
           </fieldset>
           <fieldset className="contacts-fieldset">
             <label
@@ -71,9 +89,10 @@ function Contacts() {
                 minLength="2"
                 maxLength="50"
                 className="contacts-input small-text small-border-radius"
+                value={email}
+                onChange={handleChangeEmail}
               />
             </label>
-            <span className="input-status small-text" />
           </fieldset>
           <fieldset className="contacts-fieldset contacts-fieldset_size_big">
             <label
@@ -90,15 +109,15 @@ function Contacts() {
                 minLength="2"
                 maxLength="1000"
                 className="contacts-input contacts-input_size_big small-text small-border-radius"
+                value={text}
+                onChange={handleChangeText}
               />
             </label>
-            <span className="input-status small-text input-status_last" />
           </fieldset>
           <button
             type="submit"
             aria-label="Отправить сообщение"
             className="contacts-button active-element dark-color-text medium-text small-letter-spacing upper-text"
-            onSubmit={handleSubmit}
           >
             Отправить сообщение
           </button>
