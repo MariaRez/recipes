@@ -46,11 +46,6 @@
   text-align: center;
 }
 
-.recipe-title,
-.nutrition__text-span {
-  border-bottom: 3px double var(--color2);
-}
-
 .recipe-description {
   text-align: justify;
 }

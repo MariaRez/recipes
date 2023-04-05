@@ -34,7 +34,7 @@ function Navigation() {
         <h3 className="categories-title small-text dark-color-text">
           Категории
         </h3>
-        <ul className="categories__list">
+        <ul className="categories__list small-border-radius">
           <li className="categories__item small-text categories__item_type_breakfast">
             <Link to="/*" className="categories__item small-text dark-color-text">
               Завтрак

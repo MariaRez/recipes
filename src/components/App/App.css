@@ -63,6 +63,13 @@
   text-transform: uppercase;
 }
 
+.contacts-text,
+.main-text,
+.recipe-title,
+.nutrition__text-span {
+  border-bottom: 3px double var(--color2);
+}
+
 /* активная кнопка или ссылка */
 .active-element::before,
 .active-element::after {

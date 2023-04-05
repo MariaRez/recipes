@@ -18,6 +18,7 @@
 
 .nav-tab-title {
   display: inline-block;
+  text-shadow: 1px 1px 1px var(--color1);
 }
 
 .nav-tab-title::before {

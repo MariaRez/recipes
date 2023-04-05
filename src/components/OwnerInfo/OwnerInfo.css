@@ -1,3 +1,7 @@
 .owner-info {
     position: relative;
 }
+
+.owner-info-title {
+    text-shadow: 6px 6px 0px #EEE4DB;
+}
